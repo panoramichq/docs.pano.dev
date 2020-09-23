@@ -4,17 +4,23 @@
 
 ## Installing the CLI
 
-The Panoramic Command line interface \(CLI\) is available publicly in the pypi project and can be installed by following the instructions here:
+The Panoramic Command line interface \(CLI\) is available publicly on PyPI and can be installed by following the [Installation instructions](installation.md).
 
-[https://pypi.org/project/panoramic-cli/](https://pypi.org/project/panoramic-cli/)
+## Setting up the CLI
+
+In order to use the CLI, you need to configure it. This only needs to be done one time. Don't worry - you can run the`pano configure` command multiple times if you need to change your user or credentials.
+
+To configure the CLI, run this:
+
+`pano configure`
+
+This command will prompt you for your API credentials. If you don't have them, [login to Panoramic and generate them](../../getting-started/your-profile.md#generating-an-api-token).
+
+The configure command will create a directory called`.pano` in your home directory. All configuration information will be contained in that directory. If you ever need to reset the configuration of the CLI, simply remove the directory from your system.
 
 ## Common workflow & use cases
 
 Create a folder that you’ll use as the workspace for your company, cd into it and run
-
-`pano configure`
-
-This will prompt you for your credentials.
 
 Next, run
 
@@ -36,7 +42,7 @@ Since the scan takes a while, you’d usually want to limit the scan using a SQL
 
 At this point, you probably want to assign the model to a dataset.
 
-**IMPORTANT** pano-cli does not safeguard against human errors in lifecycle management. Mistakes could possibly overwrite platform state for other users. Make sure to follow these steps!
+\*\*\*\*⚠ _**IMPORTANT** The CLI does not safeguard against human errors in lifecycle management. Mistakes could possibly overwrite platform state for other users. Make sure to follow these steps!_
 
 Before you start working with models, make sure your folder is representing the up-to-date state of the company.
 
