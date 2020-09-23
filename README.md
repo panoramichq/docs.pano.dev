@@ -6,50 +6,37 @@ description: Panoramic - The best way to understand your data
 
 ## What is Panoramic?
 
-Panoramic is a centralized marketing intelligence platform that encompasses every aspect of your marketing “stack,” from data storage through transformation and visualization. Traditionally marketers used different tools for each aspect of the “stack,” but we simplified the entire process into a single tool_kit_ so you can focus on what matters: delivering successful campaigns.
+Panoramic is an easy-to-use, no-code platform that allows you to quickly transform all of your marketing, sales and customer data into meaningful insights so you can focus on what matters: growing your business.
 
-**What Makes Our Platform Different From Other Marketing Intelligence Platforms?**
+**Here’s Just a Few of the Many Problems We Help Marketers Solve:**
 
-* End to end solution \(really!\)
-* Expertise in marketing-specific data and insights
-* Out of the box and custom visualizations for maximum flexibility with your data
-* Data dictionary, automatically mapping terms across platforms
-* Optimal customization to create custom terms, tags, and metrics
-* No seat-based pricing, consulting, IT or programming needed
-
-**Here’s Just a Few of the Many Problems We Solve for Marketers:**
-
-* Calculate a custom metric specific to your business and apply that metric across multiple platforms
-* Enable every marketer within your organization to touch and use data to inform their decisions and enhance their workflows
-* Dynamically extract data relevant to your specific needs, versus pulling everything from your “data sink” which can impact load times
-* Anonymously store your data, or connect directly to your data warehouse, so you retain full ownership over your data
+* Calculate a custom metrics specific to your business by pulling in metrics from multiple different data sources into a single KPI
+* Enable every marketer within your organization to become insight-driven by enabling them to ask their own data questions and discover the answers themselves
+* Dynamically query your data so that we only pull the exact fields needed for the analysis, reduce strain on your warehouse by not querying the chaing of dependencies every time
+* Connect directly to your data warehouse and keep your data there, so you maintain full control
 
 ## How Does Panoramic Work?
 
-#### Make your insights as agile as you are
+#### Panoramic makes your insights as agile as you are
 
-* Get the most out of every team by empowering them with the data they need
-* Legacy systems are built on complex ETL pipelines that require data engineers to write custom transformation queries to expose the data you need
-* Connect all your data sources and Pano’s **Self-Organizing Pipelines** allow you to query and blend data across all data sources. Pano continuously optimizes query performance under the hood so your engineering team doesn’t need to write any more custom ETL pipelines.
-  * don’t have to wait weeks for costly pipeline updates to expose a needed metric.
-  * These pipelines start off small and simple but grow over time to become behemoths that can slow down an organization’s agility. The static data copying nature of these pipelines makes it extremely difficult and costly to update once its set up.
+Get the most out of every team by empowering them with the data they need. Legacy systems are built on complex ETL pipelines that require data engineers to write custom transformation queries to expose the data you need. With Panoramic you can connect all your data warehouses and Pano’s **Data Preparation** and **Data Definition** tools allow you to query and blend data across all of them. Pano continuously optimizes query performance and aggregation pipelines under the hood so your engineering team doesn’t need to write any more custom ETL pipelines.
+
+These pipelines start off small and simple but grow over time to become behemoths that can slow down an organization’s agility. The static data copying nature of these pipelines makes it extremely difficult and costly to update once its set up. With Panoramic, you don’t have to wait weeks for costly pipeline updates to expose a needed metric, its as simple a updating the mapping in the UI and publishing your changes.
 
 #### Single source of truth to track your company goals
 
-* Combine first and third party data to monitor real business outcomes. Customer acquisition cost, lifetime value, return on ad spend, you name it!
-  * Give your teams the context to optimize toward the right goals, the ones that will grow the business
-* Pano’s **Unified Transformation Layer** allows everyone in the company to get the answers they need, easily, in one place and in one common language.
-  * Don’t worry whether it's called a segment, an audience, a list, they all get mapped to the name your team is familiar with
+Pano’s Unified **Data** **Transformation** Layer allows everyone in the company to get the answers they need, easily, in one place and in one common language. Don’t worry whether it's called a segment, an audience, a list, they all get mapped to the name your team is familiar with. Panoramic lets you easily blend internal sales and customer metrics with third party marketing metrics to monitor real business outcomes. Marketing spend, customer acquisition cost, lifetime value, return on ad spend, you name it!
+
+Give your teams the context to optimize toward the right goals, the ones that will grow the business
 
 #### Effortlessly stay on top of Performance
 
-* Customize team spaces to focus on the data that you need.
-* **Data Monitoring & Insights** lets you set goals, alerts and benchmarks… Pano will monitor all your data and notify you when you’ve reached your goal or suggest optimizations for poor performance.
+**Data Monitoring & Insights** lets you set goals, alerts and benchmarks. Pano will monitor all your data and notify you when you’ve reached your goal or suggest optimizations for poor performance.  Easily customize Workspaces to focus only on the data you need, and collaborate with the team who needs the data.
 
 #### Integrate into your existing workflows
 
 * This isn’t your first rodeo, you already have a Tableau dashboard that you’re used to looking at. Don’t worry, with Panoramic we can fit into your team’s existing workflows, whether its pushing data out to excel for offline presentations or syncing with tableau to visualize cross-platform blended data
-* Pano’s growing list of **Workflow Automation** partners allows you to get the data you need, wherever you need it
+* Pano’s growing list of **Data Integration** partners allows you to get the data you need, wherever you need it
 
 ## Who is Panoramic built for?
 

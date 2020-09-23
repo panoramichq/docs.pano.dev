@@ -1,4 +1,8 @@
-# Glossary Overview
+---
+description: Data Definition Overview
+---
+
+# Overview
 
 ## What is the Glossary?
 

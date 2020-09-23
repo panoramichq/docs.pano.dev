@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [The Modern Marketing Stack](the-modern-marketing-stack.md)
+* [An Introduction to Data Analysis](how-does-data-work.md)
 
 ## Getting Started
 
@@ -28,7 +29,7 @@
 
 ## Data Definition
 
-* [Glossary Overview](data-definition/untitled.md)
+* [Overview](data-definition/untitled.md)
 * [Fields](data-definition/dimensions-and-metrics.md)
 * [Functions & Calculations](data-definition/functions-and-calculations.md)
 
@@ -61,8 +62,6 @@
 ## Resources
 
 * [Common Use Cases](resources/common-use-cases.md)
-* [How Does Data Work](resources/how-does-data-work.md)
-* [Why don't my metrics add up](resources/why-dont-my-metrics-add-up.md)
 * [FAQ's](resources/faqs.md)
 * [Common Terms & Definitions](resources/common-terms-and-definitions.md)
 * [Data Security](resources/data-security.md)
