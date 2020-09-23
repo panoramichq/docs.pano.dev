@@ -2,7 +2,8 @@
 
 * [Introduction](README.md)
 * [The Modern Marketing Stack](the-modern-marketing-stack.md)
-* [An Introduction to Data Analysis](how-does-data-work.md)
+* [An Introduction to Data Analysis](how-does-data-work/README.md)
+  * [Why Don't my Metrics Add Up?](how-does-data-work/why-dont-my-metrics-add-up.md)
 
 ## Getting Started
 
