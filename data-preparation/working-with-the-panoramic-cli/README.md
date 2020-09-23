@@ -1,4 +1,4 @@
-# Working with the Panoramic CLI
+# Panoramic CLI
 
 ## Prerequisites
 

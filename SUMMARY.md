@@ -18,7 +18,7 @@
 ## Data Preparation
 
 * [Overview](data-preparation/overview.md)
-* [Working with the Panoramic CLI](data-preparation/working-with-the-panoramic-cli/README.md)
+* [Panoramic CLI](data-preparation/working-with-the-panoramic-cli/README.md)
   * [Installation](data-preparation/working-with-the-panoramic-cli/installation.md)
 * [Data Connections](data-preparation/data-connections/README.md)
   * [Scanning your data warehouse](data-preparation/data-connections/scanning-your-data-warehouse.md)

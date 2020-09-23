@@ -5,7 +5,7 @@ We recommend using one of our OS-specific guides for help with installing the Pa
 ## OS-Specific Guides
 
 * [macOS](installation.md#macos-installation)
-* Windows
+* [Windows](installation.md#windows-installation)
 
 ## Install with PIP
 
