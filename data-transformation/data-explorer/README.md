@@ -63,7 +63,7 @@ Now that you’ve created your chart, name your Chart and give it a Description.
 
 
 
-![](../.gitbook/assets/11.png)
+![](../../.gitbook/assets/11.png)
 
 1. Navigate to a Custom Board within your desired Workspace
 2. Select **CREATE CHART** within your Custom Board

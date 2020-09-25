@@ -57,7 +57,7 @@ Every model with greater than 1 row of data should have at least one identifier 
 
 Panoramic offers an identifier-detection model that scans the underlying data in a model to interpret which field combinations can be used to uniquely define a row. This combination of fields is the same as the set of identifiers so the output of the model sets the identifiers for you. THis is very helpful if you are not the author of the underlying data table and are not intimately familiar with the data and how it works.
 
-## Defining Joins
+## Defining Relationships
 
 #### What is a join?
 

@@ -8,6 +8,8 @@ Updates and changes to underlying data, you shouldn't be managing the SQL script
 
 ## How graph relationships benefit your data modeling?
 
+## The benefits of abstracting Models
+
 ## How The Query Service builds queries
 
 ![](../.gitbook/assets/0%20%282%29.png)

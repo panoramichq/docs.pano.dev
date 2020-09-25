@@ -8,6 +8,47 @@ description: Panoramic - The best way to understand your data
 
 Panoramic is an easy-to-use, no-code platform that allows you to quickly transform all of your marketing, sales and customer data into meaningful insights so you can focus on what matters: growing your business.
 
+Many transformation tools still rely on users creating complex "recipes" or "flows". These are a series of simple steps that then have to be chained together into complex dependency trees. These systems provide maximum amount of flexibility, but they are still designed around the basic premise of ETL, where data needs to be extracted, THEN transformed, THEN loaded somewhere. If you realize your final analysis is missing a metric, or one of your datasets updates the API to include a new metric, your data engineering team still needs to go update every single step in the flow to make sure that metric gets pulled in and passed all the way through to the final report.
+
+Panoramic is a modern transformation tool that is built from the ground up to transform data using the ELT approach and to take advantage of the amazing powers that cloud data warehouses like Snowflake and BigQuery provide.  With Panoramic it is only required to keep a mapping of your raw data, 1 level, no dependencies, have all your data available to you for querying the moment its mapped. No more complicated transformation pipeline, Pano manages it for you based on the final report you want to build   \(by working backwards to "cache" any of those intermediary steps, only if it has to in order to get the best query performance or if your transformation logic gets too complex.\)
+
+## Why did we do it?
+
+Panoramic was built on a simple observation. Marketers need to become more data-driven, but the deck is stacked against them.
+
+With today’s tools, they need the help of a whole team of analysts, engineers, and data scientists just to create a single chart with data from 3 API accounts. Not great when you have 5 more API accounts waiting in the wings and a whole dashboard to build.
+
+At Panoramic, we asked what if we could do it better? 
+
+What if we could offer a single platform to do all of that, with no coding required?
+
+A platform where …
+
+* No prior training in analytics is required
+* No SQL is required
+* No engineering is required
+
+## Who is Panoramic built for?
+
+### Data Experts
+
+Clear your backlog of basic data cleaning and reporting tasks so you can focus on what you’re good at, building models, forecasts and building products that grow your business
+
+* Deliver tools to prepare data to the people who understand the data
+* Surface data quality issues in a way that's easy to fix them
+
+### Excel / BI Masters
+
+Just like what you’re used to, but now you can do it once and it will be applied forever, or until you want to change it. Imagine if all your data could flow into your perfect excel template instead of having to rebuild it each week...that’s pano
+
+* Cut time to prepare actionable data
+* Avoid IT bottlenecks and reliance on data scientists in data prep
+* Eliminate manual prep work
+
+### “I just need answers”
+
+Don’t care about the magic sauce going on under the hood. Great, then don't, just ask for the metrics or dimensions that you care about and the system will tell you what’s possible, and give you the answers you’re asking for
+
 **Here’s Just a Few of the Many Problems We Help Marketers Solve:**
 
 * Calculate a custom metrics specific to your business by pulling in metrics from multiple different data sources into a single KPI
@@ -38,41 +79,9 @@ Give your teams the context to optimize toward the right goals, the ones that wi
 * This isn’t your first rodeo, you already have a Tableau dashboard that you’re used to looking at. Don’t worry, with Panoramic we can fit into your team’s existing workflows, whether its pushing data out to excel for offline presentations or syncing with tableau to visualize cross-platform blended data
 * Pano’s growing list of **Data Integration** partners allows you to get the data you need, wherever you need it
 
-## Who is Panoramic built for?
-
-### Data Experts
-
-* Clear your backlog of basic data cleaning and reporting tasks so you can focus on what you’re good at, building models, forecasts and building products that grow your business
-
-### Excel / BI Masters
-
-* Just like what you’re used to, but now you can do it once and it will be applied forever, or until you want to change it. Imagine if all your data could flow into your perfect excel template instead of having to rebuild it each week...that’s pano
-
-### “I just need answers”
-
-* Don’t care about the magic sauce going on under the hood. Great, then don't, just ask for the metrics or dimensions that you care about and the system will tell you what’s possible, and give you the answers you’re asking for
-
-## Why did we do it?
-
-Panoramic was built on a simple observation. Marketers need to become more data-driven, but the deck is stacked against them.
-
-With today’s tools, they need the help of a whole team of analysts, engineers, and data scientists just to create a single chart with data from 3 API accounts. Not great when you have 5 more API accounts waiting in the wings and a whole dashboard to build.
-
-At Panoramic, we asked what if we could do it better? 
-
-What if we could offer a single platform to do all of that, with no coding required?
-
-A platform where …
-
-* No prior training in analytics is required
-* No SQL is required
-* No database administrator is required
-* No summer reading of The Grammar of Graphics is required
-
 ## What’s our mantra?
 
-Sounds great, but building software is making hundreds of small decisions constantly. It’s easy to get distracted, and what started as “simple” turns into “complicated” pretty quickly.  
-
+Sounds great, but building software is making hundreds of small decisions constantly. It’s easy to get distracted, and what started as “simple” turns into “complicated” pretty quickly.
 
 To help us keep focused, we had three mantras we repeated to ourselves.
 
@@ -95,10 +104,9 @@ If we really mean accuracy above all else, that means that 3D charts have got to
 
 \* Cleveland and McGill’s 1984 classic study [Graphic Perceptions](https://www.jstor.org/stable/2288400)
 
-\*\* Paul Reiman’s article [3D Pie Charts are Evil](https://www.getnerdyhr.com/3d-pie-charts-are-evil/)  
+\*\* Paul Reiman’s article [3D Pie Charts are Evil](https://www.getnerdyhr.com/3d-pie-charts-are-evil/)
 
-
-#### Make the right thing easy and the wrong thing hard. 
+#### Make the right thing easy and the wrong thing hard.
 
 Anyone who’s ever opened a spreadsheet knows that assembling data can get complicated quick. And it should be, building a great data visualization should have a lot of thought behind it.
 
@@ -126,6 +134,4 @@ Let’s say you’re running marketing on Facebook Ads.
 Wait a minute! The account only had APP\_INSTALLS and VIDEO\_VIEWS. If you were looking quickly, you might mistake the chart to include both objectives.
 
 Instead, we’ll warn you that you don’t have any campaigns with LINK\_CLICKS. You can still save the filter and carry on, but now we know you’re not walking away with a mistaken impression.
-
-
 

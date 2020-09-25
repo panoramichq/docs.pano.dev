@@ -2,8 +2,7 @@
 
 * [Introduction](README.md)
 * [The Modern Marketing Stack](the-modern-marketing-stack.md)
-* [An Introduction to Data Analysis](how-does-data-work/README.md)
-  * [Why Don't my Metrics Add Up?](how-does-data-work/why-dont-my-metrics-add-up.md)
+* [An Introduction to Data Analysis](how-does-data-work.md)
 
 ## Getting Started
 
@@ -23,6 +22,8 @@
   * [Installation](data-preparation/working-with-the-panoramic-cli/installation.md)
 * [Data Connections](data-preparation/data-connections/README.md)
   * [Scanning your data warehouse](data-preparation/data-connections/scanning-your-data-warehouse.md)
+  * [Whitelist Panoramic IP Addresses](data-preparation/data-connections/whitelist-panoramic-ip-addresses.md)
+  * [Creating a Panoramic DB User](data-preparation/data-connections/creating-a-panoramic-db-user.md)
   * [CSV Uploads](data-preparation/data-connections/csv-uploads.md)
 * [Datasets](data-preparation/creating-datasets/README.md)
   * [Data Projections](data-preparation/creating-datasets/data-projections.md)
@@ -39,7 +40,8 @@
 
 * [Overview](data-transformation/data-transformation-overview.md)
 * [Dynamic SQL Querying \(Husky\)](data-transformation/untitled.md)
-* [Data Explorer](data-transformation/data-explorer.md)
+* [Data Explorer](data-transformation/data-explorer/README.md)
+  * [Dynamic Field Search](data-transformation/data-explorer/dynamic-field-search.md)
 * [Data Visualization](data-transformation/data-visualization.md)
 * [Data Comparisons](data-transformation/data-comparisons.md)
 * [Data Filters](data-transformation/report-filters.md)
@@ -63,7 +65,10 @@
 
 ## Resources
 
-* [Common Use Cases](resources/common-use-cases.md)
+* [Common Use Cases](resources/common-use-cases/README.md)
+  * [Why Don't my Metrics Add Up?](resources/common-use-cases/why-dont-my-metrics-add-up.md)
+  * [Generating some common fields](resources/common-use-cases/generating-some-common-fields.md)
+  * [Metric Data Fan-out](resources/common-use-cases/metric-data-fan-out.md)
 * [FAQ's](resources/faqs.md)
 * [Common Terms & Definitions](resources/common-terms-and-definitions.md)
 * [Data Security](resources/data-security.md)

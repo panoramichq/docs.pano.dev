@@ -2,15 +2,15 @@
 
 ## Common Database Structures
 
-Databases - cloud vs on-premise
+#### Databases - cloud vs on-premise
 
-Schemas
+#### Schemas
 
-Tables
+#### Tables
 
-Views
+#### Views
 
-Columns
+#### Columns
 
 ## What are Metric tables?
 

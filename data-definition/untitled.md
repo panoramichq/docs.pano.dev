@@ -6,7 +6,16 @@ description: Data Definition Overview
 
 ## What is the Glossary?
 
-Custom Terms allow you to create customized metrics to be used in your Custom Boards. Some reasons why you might create a Custom Term:
+> A **business glossary** makes it possible to define fields used within an enterprise. It is a trusted reference business “dictionary” in an organization.
+
+Its main objectives, among others, are to:
+
+* Use the same definitions and create a common language between all employees,
+* Have a better understanding and collaboration between business and IT teams,
+* Associate business terms to other assets in the enterprise and offer an overview of their different connections,
+* Elaborate and share a set of rules regarding data governance.
+
+Custom Fields allow you to create customized metrics to be used in your Custom Boards. Some reasons why you might create a Custom Term:
 
 * You use a calculated metric in your reporting that isn't available in the Panoramic Feature Glossary
 * You want to re-name a Standard Event with an easier to use alias \(ie. Checkouts Initiated renamed to "Showtime Lookup"

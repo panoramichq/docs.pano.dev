@@ -19,6 +19,10 @@ This commonly takes form in the following ways
 
 ## How Does Panoramic Help?
 
+UPDATE
+
+![UPDATE](https://files.readme.io/a29dd19-data-workflow.png)
+
 ### Datasets
 
 Also known as a “universe” of data, a dataset forms a group of tables that have an implicit relationship between the data. Usually all of these tables come from the same source, such as Facebook Marketing API, or Shopify API. The set of tables within a dataset have implicit joins between them, usually in the form of primary keys and foreign keys like campaign\_id or product\_id. These tables may also include
@@ -30,6 +34,13 @@ Pure SQL transformations applied to an existing data table to convert it into a 
 ### Data Models
 
 Data "modeling" can mean many things depending on the context and the language/platform you are working with. In general, data modeling is defining an abstract definition of what a set of data "means" by adding metadata to the data that is not available directly in the underlying database. This metadata is very commonly things like descriptions for what each column means, the data type, how multiple tables can be joined together, etc. 
+
+Data modeling refers to the process of applying business logic to make sense of physical data. This process aims to:
+
+* Consolidate data from multiple data sources
+* Transform data, produce business-friendly data units, in other words, easier to query and to interpret
+* Give business meaning to raw data generated from your system with metadata
+* Promote data self-service and collaboration
 
 #### Field Mapping
 
