@@ -33,8 +33,13 @@
         to automate the data mapping and transformation process</td>
     </tr>
     <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">IDB</td>
+      <td style="text-align:left">Insight-Driven Business</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Field</td>
+      <td style="text-align:left">any term defined in your business glossary, this could include dimensions
+        or metrics, direct from the dataset or calculated</td>
     </tr>
   </tbody>
 </table>
