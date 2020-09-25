@@ -32,7 +32,13 @@ TBD
 
 ## Data Preparation
 
+> "Data preparation is a must-have technology for enabling business teams to find, prepare and share heterogeneous data for their integration, analytics and data science use cases" - Gartner
+
+> **"Data preparation** is the act of manipulating \(or pre-processing\) raw data \(which may come from disparate data sources\) into a form that can readily and accurately be analysed, e.g. for business purposes. Data preparation is the first step in data analytics projects and can include many discrete tasks such as loading data or data ingestion, data fusion, data cleaning, data augmentation, and data delivery." - Wikipedia
+
 ### Data Connections
+
+Data Connections store the credentials to all of your physical data sources, these can be databases, cloud data warehouses, file storage systems, etc. You can add as many Data Connections as you need into the Platform. All the underlying data in these connections will then become available for mapping and modeling into Datasets.
 
 ### Datasets
 
