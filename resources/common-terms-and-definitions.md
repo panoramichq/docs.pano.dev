@@ -26,6 +26,18 @@
         depending on the warehouse</td>
     </tr>
     <tr>
+      <td style="text-align:left">View</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Model</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Transformation</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left">CLI</td>
       <td style="text-align:left">Command line interface - a package that can be installed on your local
         computer to streamline connection to and interaction with the panoramic
@@ -37,9 +49,53 @@
       <td style="text-align:left">Insight-Driven Business</td>
     </tr>
     <tr>
+      <td style="text-align:left">Column</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left">Field</td>
       <td style="text-align:left">any term defined in your business glossary, this could include dimensions
         or metrics, direct from the dataset or calculated</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Metric</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Dimension</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Function</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Calculation</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Workspace</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Board</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Signal</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Dataset</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">User</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Collaborator</td>
+      <td style="text-align:left"></td>
     </tr>
   </tbody>
 </table>

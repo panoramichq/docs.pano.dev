@@ -4,12 +4,13 @@
 
 As marketers we often use big words or fancy acronyms, so we try our best to explain these terms throughout our platform so any user can understand and visualize their organization’s data. One of those fancy terms is centralized marketing intelligence. And we’re here to tell you what it means, and what we do.
 
-A MORDER MARKETING STACK:
+A MORDERN MARKETING STACK:
 
 * Streamlines the process, enabling you to consolidate multiple, typically disparate capabilities into one destination
 * Saves time, avoiding the painful process of going back and forth between tabs, emails, and accounts
 * Simplifies the data collection and aggregation process, often a cumbersome task tackled by an entire team
 * Saves money, only paying for one toolkit versus several individual tools
+* Allows you to easily combine aggregated reporting from third party platforms with user-level data on revenue and customers
 
 ## **Players in the Landscape**
 
