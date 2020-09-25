@@ -39,7 +39,7 @@
 ## Data Transformation
 
 * [Overview](data-transformation/data-transformation-overview.md)
-* [Dynamic SQL Querying \(Husky\)](data-transformation/untitled.md)
+* [Transformations \(Husky\)](data-transformation/untitled.md)
 * [Data Explorer](data-transformation/data-explorer/README.md)
   * [Dynamic Field Search](data-transformation/data-explorer/dynamic-field-search.md)
 * [Data Visualization](data-transformation/data-visualization.md)
