@@ -42,5 +42,9 @@ Data Connections store the credentials to all of your physical data sources, the
 
 ### Datasets
 
+Datasets allow you to define virtual "groupings" of similar data, independent of where that data is stored. If you have CRM data in 3 schemas across 2 data connections... Combine it all into a single dataset so that you can define the joins between related dimensions and analyze it as if it was all stored in one nice and clean schema.
+
 ### Glossary
+
+The Company Glossary stores the universe of all fields that are mapped in datasets or and calculated fields created in any Workspaces. This view lets admins and analysts keep a centralized record of all fields and their corresponding definitions, calculations and other metadata to make sure all users have access to the data they need and are able to perform their analyses safely.
 

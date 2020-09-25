@@ -1,6 +1,10 @@
-# Scanning your data warehouse
+# Data Discovery
 
-## Scanning Your data
+## What is Data Discovery?
+
+Data discovery is the first step in the data transformation process. Typically the data is profiled using profiling tools or sometimes using manually written profiling scripts to better understand the structure and characteristics of the data and decide how it needs to be transformed.
+
+## How Pano Discovers Your data
 
 #### First time scan
 

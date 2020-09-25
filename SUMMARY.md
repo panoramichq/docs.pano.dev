@@ -21,7 +21,7 @@
 * [Panoramic CLI](data-preparation/working-with-the-panoramic-cli/README.md)
   * [Installation](data-preparation/working-with-the-panoramic-cli/installation.md)
 * [Data Connections](data-preparation/data-connections/README.md)
-  * [Scanning your data warehouse](data-preparation/data-connections/scanning-your-data-warehouse.md)
+  * [Data Discovery](data-preparation/data-connections/scanning-your-data-warehouse.md)
   * [Whitelist Panoramic IP Addresses](data-preparation/data-connections/whitelist-panoramic-ip-addresses.md)
   * [Creating a Panoramic DB User](data-preparation/data-connections/creating-a-panoramic-db-user.md)
   * [CSV Uploads](data-preparation/data-connections/csv-uploads.md)
@@ -45,7 +45,7 @@
 * [Data Visualization](data-transformation/data-visualization.md)
 * [Data Comparisons](data-transformation/data-comparisons.md)
 * [Data Filters](data-transformation/report-filters.md)
-* [Report Templates](data-transformation/report-templates.md)
+* [Transformation Templates](data-transformation/report-templates.md)
 
 ## Data Monitoring & Insights <a id="data-monitoring"></a>
 

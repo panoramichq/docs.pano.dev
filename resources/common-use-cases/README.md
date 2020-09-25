@@ -20,3 +20,13 @@ How-To:
 * Parse UTMs and naming conventions and override existing values with your cleaned up values
 * Save your metrics and make them instantly available to the team to include in their analyses
 
+Overriding Values to match across platforms
+
+Parsing naming conventions to extract valuable metadata
+
+Define custom metrics sourcing from multiple data sources
+
+* Customize metrics based on conditional logic, like adding different margin per partner, or adjusting ROI based on the country
+
+
+

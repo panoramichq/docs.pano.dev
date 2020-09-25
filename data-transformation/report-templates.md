@@ -1,8 +1,15 @@
-# Report Templates
+# Transformation Templates
+
+Pano provides common out-of-the-box transformations to get you up and running quickly
+
+* Cross channel blended metrics
+* Cross channel Normalized dimensions \(geographic, psychographic, behavioral\)
+* Out of the box models for common vendors and data sources \(Pinterest, Twitter, Snap, The Trade Desk\)
+* Out of the box reports to get new data sources up and running asap \(Social, Search, Web Analytics\)
 
 ## Linking Your Dataset
 
-## Board & Charts in Templates
+## Transformations Templates in Workspaces
 
 
 

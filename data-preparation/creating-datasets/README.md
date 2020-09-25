@@ -1,5 +1,9 @@
 # Datasets
 
+## What is Data Mapping?
+
+Data mapping is the process of defining how individual fields are mapped, modified, joined, filtered, aggregated etc. to produce the final desired output. Developers or technical data analysts traditionally perform data mapping since they work in the specific technologies to define the transformation rules.
+
 ## What is a dataset?
 
 Also known as a “universe” of data, a dataset forms a group of tables that have an implicit relationship between the data. Usually all of these tables come from the same source, such as Facebook Marketing API, or Shopify API. The set of tables within a dataset have implicit joins between them, usually in the form of primary keys and foreign keys like campaign\_id or product\_id. These tables may also include
