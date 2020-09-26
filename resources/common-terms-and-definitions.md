@@ -103,6 +103,10 @@
         of your data showing what information is stored in each table and how you
         can form relations between multiple tables for more complex analysis</td>
     </tr>
+    <tr>
+      <td style="text-align:left">Cache</td>
+      <td style="text-align:left"></td>
+    </tr>
   </tbody>
 </table>
 

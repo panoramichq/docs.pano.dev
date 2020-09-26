@@ -41,7 +41,7 @@
 * [Overview](data-transformation/data-transformation-overview.md)
 * [Transformations \(Husky\)](data-transformation/untitled.md)
 * [Data Explorer](data-transformation/data-explorer/README.md)
-  * [Dynamic Field Search](data-transformation/data-explorer/dynamic-field-search.md)
+  * [SmartSearch for Fields](data-transformation/data-explorer/dynamic-field-search.md)
 * [Data Visualization](data-transformation/data-visualization.md)
 * [Data Comparisons](data-transformation/data-comparisons.md)
 * [Data Filters](data-transformation/report-filters.md)

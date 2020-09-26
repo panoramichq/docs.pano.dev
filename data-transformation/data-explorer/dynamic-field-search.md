@@ -1,4 +1,4 @@
-# Dynamic Field Search
+# SmartSearch for Fields
 
 Panoramic abstracts the Models so you don't have to worry. This approach makes it simpler for users who are not familiar with data, databases, or your underlying data model to still perform an analysis safely, without calculating something incorrectly, or having to take the time to learn what fields are in every table. The data engineering and analytics team can work on the underlying data model, to ensure everything is defined correctly, joined and exposed, and the business team can be free to explore the data in a safe and easy manner.
 

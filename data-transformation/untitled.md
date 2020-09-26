@@ -16,6 +16,14 @@ You can think of this like directions written on a map vs directions in google m
 
 ## The benefits of abstracting Models
 
+In order for regular analyses to be useful, they have to be reasonably performant. If you have to wait 3 days for a query to run every time you run it, its really going to slow down the impact of those insights \(and probably be pretty frustrating too\). To make dashboards, reports and other analyses load quickly, it is important to pre-aggregate the data in those reports, sometimes this is done through hand-written aggregation pipelines, other times its done through clever caching techniques. 
+
+In either scenario, this means that you can have the same fields existing in multiple different tables. Impressions can live in the raw event log, the daily aggregation table and a weekly cross platform aggregation table.
+
+If your BI tool requires you to explicitly define which model you want to select data from, then it won't be capable of taking advantage of any aggregated views of that data, which could reduce the query complexity and improve performance. 
+
+By abstracting the models you allow the query service to determine which model will be the best source of the data based on the specifics of each query. It can pull data from an aggregated table if the analysis only looks at Total Spend, but if the analysis asks for Total Spend by Age by Device by Date then the query service can dynamically rewrite the query to source data from a more granular model.
+
 ## How The Query Service builds queries
 
 ![](../.gitbook/assets/0%20%282%29.png)
