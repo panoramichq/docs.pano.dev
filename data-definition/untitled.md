@@ -29,6 +29,11 @@ Navigate to your Glossary, you can either have a Company Glossary that will be a
 
 Permissions and access is managed via workspaces, this allows company admins to share specific fields into a workspace and trust that the collaborators in that workspace will only have access to the data they should, and not leak sensitive information where you dont want it
 
+#### Data Lineage
+
+* Define the system of record for metrics like conversions
+* View underlying data that feeds a calculated metric
+
 ## 
 
 ![](https://downloads.intercomcdn.com/i/o/209151787/957cb8b885b66a1ffceba7ac/image.png)

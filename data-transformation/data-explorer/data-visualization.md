@@ -2,6 +2,20 @@
 
 ## What is data visualization?
 
+Data visualization is a huge industry on its own. There are College courses, 1000's of research papers published and a large set of available resources to help present data so that it tells a story.
+
+At Panoramic we try to follow the approach taken by The Grammar of Graphics where the data is the starting point for a visualization and....
+
+Our goal with visualizations is to help you, the user and any other consumer of your transformation understand the data, we are not designing to be a presentation tool. This means we do not focus on the ability to customize colors and fonts in a chart. Instead we pick the colors for you based on research that shows which colors are the most easily interpretable by the consumer of a visual. If the data should not be presented in a line chart, then we disable the line chart. Our goal is to make it easier for new data visualizers to publish transformations that tell a story, and reduce the possibility of them making a mistake by presenting the data in a confusing manner.
+
+Here are some good resources to learn more about data visualization:
+
+* [https://www.springer.com/gp/book/9780387245447](https://www.springer.com/gp/book/9780387245447)
+* [https://www.datavisualizationsociety.com/](https://www.datavisualizationsociety.com/)
+* [https://observablehq.com/@d3/learn-d3](https://observablehq.com/@d3/learn-d3)
+
+
+
 ## Using charts to express insights
 
 ## Choosing the best chart type

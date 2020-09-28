@@ -40,22 +40,23 @@
 
 * [Overview](data-transformation/data-transformation-overview.md)
 * [Transformations \(Husky\)](data-transformation/untitled.md)
-* [Data Explorer](data-transformation/data-explorer/README.md)
-  * [SmartSearch for Fields](data-transformation/data-explorer/dynamic-field-search.md)
-* [Data Visualization](data-transformation/data-visualization.md)
-* [Data Comparisons](data-transformation/data-comparisons.md)
 * [Data Filters](data-transformation/report-filters.md)
+* [Data Explorer](data-transformation/data-explorer/README.md)
+  * [Data Visualization](data-transformation/data-explorer/data-visualization.md)
+  * [Data Comparisons](data-transformation/data-explorer/data-comparisons.md)
+  * [SmartSearch for Fields](data-transformation/data-explorer/dynamic-field-search.md)
 * [Transformation Templates](data-transformation/report-templates.md)
 
 ## Data Monitoring & Insights <a id="data-monitoring"></a>
 
-* [Overview](data-monitoring/overview.md)
-* [Activity Feed](data-monitoring/activity-feed.md)
+* [Overview](data-monitoring/overview/README.md)
+  * [Connected Datasets](data-monitoring/overview/connected-datasets.md)
+  * [Activity Feed](data-monitoring/overview/activity-feed.md)
+  * [Quick Search](data-monitoring/overview/quick-search.md)
 * [Boards](data-monitoring/untitled.md)
-* [Connected Datasets](data-monitoring/connected-datasets.md)
-* [Signals](data-monitoring/signals.md)
+* [Signals](data-monitoring/signals/README.md)
+  * [Automated Insights](data-monitoring/signals/automated-insights.md)
 * [Collaboration](data-monitoring/collaboration.md)
-* [Automated Insights](data-monitoring/automated-insights.md)
 
 ## Data Integration
 

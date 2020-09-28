@@ -2,7 +2,7 @@
 
 ## **What Is Data Explorer?**
 
-Data Explorer is the feature that allows any Admin or Edit user to create their own customized charts and boards, utilizing the connected data sources, in any Workspaces.
+Data Explorer allows any Admin or Edit user to create their own customized charts and boards, utilizing the connected data sources, in any Workspaces.
 
 * Charts visualize data for multiple data sources
 * Create multiple charts per board
@@ -13,7 +13,7 @@ Data Explorer is the feature that allows any Admin or Edit user to create their 
 
 > **Code execution** is the step whereby the generated code is executed against the data to create the desired output. The executed code may be tightly integrated into the transformation tool, or it may require separate steps by the developer to manually execute the generated code.
 >
-> **Data review** is the final step in the process, which focuses on ensuring the output data meets the transformation requirements. It is typically the business user or final end-user of the data that performs this step. Any anomalies or errors in the data that are found and communicated back to the developer or data analyst as new requirements to be implemented in the transformation process.[\[1\]](https://en.wikipedia.org/wiki/Data_transformation#cite_note-cio.com-1)
+> **Data review** is the final step in the process, which focuses on ensuring the output data meets the transformation requirements. It is typically the business user or final end-user of the data that performs this step. Any anomalies or errors in the data that are found and communicated back to the developer or data analyst as new requirements to be implemented in the transformation process.
 
 At the top you will see the chart that you've built and can publish, and at the bottom you'll see the tab for "Blended data", as well as the Facebook, Twitter and Snap specific data. These sections will show you which fields are supported by what data source.
 
