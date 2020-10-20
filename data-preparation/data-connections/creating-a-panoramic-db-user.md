@@ -1,8 +1,10 @@
-# Creating a Panoramic DB User
+# Connect to your Database
 
 ## Why do I need to Create a DB User?
 
-TBD
+In order to utilize Panoramic, we need access to your data warehouse. While it's certainly possible to use an existing database user, our recommended best practice is to create a user specifically for Panoramic.
+
+This enables you to give Panoramic only the access we need to help you understand & transform your data. It also makes it easy for you to see every query we run and data our system accesses.
 
 #### What Permissions will I need?
 
@@ -51,6 +53,27 @@ GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO PANORAMIC;
 ### Snowflake
 
 ### Google BigQuery
+
+When connecting BigQuery, we will generate a Google Cloud [service account](https://cloud.google.com/iam/docs/service-accounts) unique to your company. You will then need to grant that user access to the Google Cloud Project that contains your BigQuery data.
+
+Panoramic requires the following roles in Google Cloud:
+
+| Role | Where | Reason |
+| :--- | :--- | :--- |
+| BigQuery User | Project | Gives Panoramic permission to see the schema of tables in your account, and gives us permission to create jobs to query the data from your account |
+| BigQuery Data Viewer | Project or tables | Gives Panoramic permission to access the data in your account. The recommended approach is to grant this role on the project level, but if you prefer to limit the access that Panoramic has to your data, you can use the [sharing feature](https://cloud.google.com/bigquery/docs/dataset-access-controls) to only grant this role on specific tables you want us to access. |
+
+You will need to create a new BigQuery connection in the console. This will give you your unique service account email address. You will need to put this into the Google IAM console:
+
+![](../../.gitbook/assets/google-iam-overview.png)
+
+After clicking the "Add" button, you will be presented with a screen where you must input the service account and grant roles to it. Once you grant the correct roles, your screen should look like the following:
+
+![](../../.gitbook/assets/bq-add-user2.png)
+
+Finally, click the "Save" button and verify the account is added correctly:
+
+![](../../.gitbook/assets/google-iam-final.png)
 
 ### Amazon Redshift
 
