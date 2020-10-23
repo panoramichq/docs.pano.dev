@@ -1,66 +1,30 @@
 # An Introduction to Data Analysis
 
-## Common Database Structures
+## What are Metric Tables?
 
-#### Databases - cloud vs on-premise
-
-#### Schemas
-
-#### Tables
-
-#### Views
-
-#### Columns
-
-## What are Metric tables?
-
-You may also hear these referred to as "Fact" tables. 
+Metric tables record measurements or metrics for a specific event. They generally consist of metric values and dimensions that relate to entity tables where additional descriptive attributes are stored. Metric tables are designed to a low level of granularity, meaning they can record metrics at a very atomic level. You may also hear these referred to as "Fact" tables. 
 
 #### How metrics can be stored
 
-* A top-level metric is a metric totaled over its entire entity. So for example, a top-level ad group impressions is the sum of all impressions for the ad group.
-* Delta Metric - the total value is split across multiple rows in a column based on the set of dimensions in the table
-* Cumulative - each record includes a new value aggregated with a series of previously existing values 
+* Lifetime Metric - this shows all the metrics that have been delivered or attributed to a specific entity over all time. So for example, top-level ad group impressions is the sum of all impressions served for the ad group in one table row.
+* Delta Metric - the total metric value is split across multiple rows in a column based on the set of dimensions in the table. For example, Impressions by ad group by date, each row in this table would contain only the impressions served on a given date for a given ad group.
+* Cumulative metric - each record includes a new value aggregated with a series of previously existing values. For example, each row would contain the sum of impressions from previous rows + the current date's impressions.
 
-Lifetime - at its most basic, this shows all the metrics that have been delivered or attributed to a specific entity
+Since metrics accrue over time, there are many possibilities to break metrics down by various reporting dimensions, the most common dimension is time. Panoramic uses time breakdowns heavily in being able to fetch and replay metrics.
 
-Since metrics accrue over time, there are many possibilities to break metrics down by various reporting attributes, the most common attribute is time. Panoramic uses time breakdowns heavily in being able to fetch and replay metrics \(historical and into the future\)
+Common time breakdowns are hourly, daily, or monthly. Panoramic reads data at the most granular time breakdown provided by each platform, this allows the system to have more flexibility when aggregating metrics for a specific analysis.
 
-Common time breakdowns are hourly, daily, or monthly. Panoramic fetches data at the most granular time breakdown provided by each platform, this allows us to aggregate metrics up in the most flexible ways to make custom analysis more functional
-
-Other common breakdowns that are commonly provided by platforms are based on geographic, demographic and psychographic attributes. Whenever possible panoramic pulls breakdown metric reporting at these levels as well.
-
-These common breakdowns allow panoramic to utilize its data glossary and data mapping functionality to map breakdowns across platforms. This allows our users to easily aggregate breakdown metrics across their marketing platforms, allowing for easy answers to questions like “how much have we spent toward men in the past week?” or “how does my ROI in NY compare to LA?”
+Other breakdowns that are commonly provided by platforms include geographic, demographic and psychographic attributes. All of these breakdowns can be added to the data glossary within Pano. This allows our users to easily aggregate breakdown metrics across multiple datasets, allowing for easy answers to questions like “how much have we spent toward men in the past week?” or “how does my ROI in NY compare to LA?”
 
 ## What are Entity tables?
 
-An entity is a thing you can take a measurement of. Some common ones are account, campaign, ad group, ad, and creative. These are the “things” that we measure the marketing performance of.
+Entity tables usually have a relatively small number of records compared to metric tables, but each record may have a very large number of attributes to describe the fact data. You may also hear entity tables referred to as "Dimension" tables. Entities can define a wide variety of attributes that can be valuable for analysis, such as name, start date, creative type, status, price or age.
 
-You may also hear these referred to as "Dimension" tables. 
-
-what are they - id space in the external platform, think of something that you go and create in a platform like an account or a campaign
-
-Attributes - data that is associated with an entity like a name, start\_date, objective, etc
-
-Relationships - entities can be related to each other in many different ways, each platform decides this based on their specific use case and needs. We keep track of these relationships to make sure we can query and aggregate data correctly
+In the modern data world, its very common to think of entities as the objects that you create across all the tools you use. This could be a campaign in facebook, a new customer in Salesforce or a new web page in Google Analytics. Each tool will have its own set of objects that you create in order to use the service. When the data from all these tools gets pulled into your data warehouse, a mirror image of all the entities that exist in each tool becomes available in your data. The relationship between all these entities depends on the specifics of each tool, but there are usually commonalities within tools in the same space. For example, all social marketing platforms have a 3 tier hierarchy of entities that are used to define media budget and targeting. These are usually named like Campaign &gt; adgroup &gt; ad and they can be combined across platforms for more robust analysis. Pano helps keep track of these relationships to make sure you can query and aggregate data correctly.
 
 ## What are "Log" or "History" tables?
 
-These tables are common in API-driven data collection since the same piece of data may be collected multiple times by the system. Very often the system that talks to the API and collects the reporting metrics does not "know" whether the report its asking for has already been collected. These systems will try to collect the same piece of data multiple times, sometimes to account for API issues or missing it the first time, sometimes because data may be restated and there may be "fresher" data if we collect it again, this is commonly the case with conversions and long attribution windows, where the number of conversion events can continue to grow for up to 30 days after the user interaction.
+These tables are common in API-driven data collection since the same piece of data may be collected multiple times by the system. Very often the system that talks to the API and collects the reporting metrics does not "know" whether a given report has already been collected. These systems will try to collect the same piece of data multiple times to ensure that they don't miss anything. Its usually best practice to collect the same piece of data multiple times because the source platform may restate the data and there may be "fresher" data if its collected again, this is commonly the case with conversions and long attribution windows, where the number of conversion events can continue to grow for up to 30 days after the user interaction.
 
-In many cases these duplicate records are "deduplicated" by the system that collects the data, but in some systems, or in some cases they are not and instead you will have multiple rows in your database that reflect the same piece of data. If you aggregate this info without correctly handling these duplicates, you may find errors in your analysis, like counting how many creatives were running, or summing spend for a given day. 
-
-## Basics of Data Collection
-
-Collection - how we collect data, how often it refreshes, how refresh intervals work with time breakdowns, overwriting data within specific windows and adding new buckets
-
-What is a record or “bucket” of data
-
-Lookback windows, how do we replay old data
-
-Fetching historical data when accounts are added
-
-Attribution windows, how attributed metrics like conversions accrue over time. How we replay old metrics to ensure we collect all the conversions. impression/click timestamp vs conversion timestamp attribution, we pull based on the conversion timestamp so you will see conversion trickle in even after media stops running. This trickle could go for as many days as your defined attribution window on the platform is configured \(usually something like 1 day post view 28 day post click\)
-
-## What is Data Blending?
+In some cases these duplicate records are "deduplicated" by the system that collects the data, but in some systems, or in some cases they are not. This will result in multiple rows in your database that reflect the same piece of data. If you aggregate this info without correctly handling these duplicates, you may find errors in your analysis. Pano helps with this analysis by deduplicating log data as well as providing multiple useful aggregation types to ensure you are reporting correctly.
 

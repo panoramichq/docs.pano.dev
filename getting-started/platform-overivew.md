@@ -2,30 +2,30 @@
 
 ## Getting Started with Panoramic
 
-Getting started is as easy as 3 simple steps and you can be up and running in less than 30 minutes by just following these three steps.
+Getting started is easy and you can be up and running in less than 30 minutes by just following these three steps.
 
 1. Connect your data and **define all your datasets** - already have the data, connect your data warehouse. Need help getting the data, Integrate with one of our Data Pipeline partners. Once you're connected, Data Preparation and Data Definition has never been easier to manage.
-2. Let our unified **data transformation layer** inspect all of the data you connect and build useful, marketing specific models to speed up your analysis
+2. Let our unified **data transformation layer** inspect all of the data you connect and build useful models to speed up your analysis
    1. Have something totally custom, dive in deep and configure your own custom models
 3. Invite teams into **Personalized Workspaces** and let them start safely customizing their metrics, setting up monitoring and letting the system push insights to them, freeing up more time to focus on the business
 
-## Lets dive a little deeper into the anatomy of the Panoramic platform
+## The anatomy of the Panoramic platform
 
-When getting started using a new platform, it can often take time to “learn the ropes.” At Panoramic, we want to minimize that time so you get immediate value out of the platform. The below diagram shows the way our platform is organized in an effort to help you quickly get up and running.![](../.gitbook/assets/1%20%281%29.png)
+When getting started using a new platform, it can often take time to “learn the ropes.” At Panoramic, we want to minimize that time so you get immediate value out of the platform. The below definitions explain how the platform is organized in an effort to help you quickly get up and running.
 
-**BOARD -** Starting from the top of the diagram, a Board can be thought of as your “visual organizer.” As shown in the example above, a Board can consist of one or more charts. There are two types of Boards: **Featured Boards** and **Custom Boards**.
+**BOARD -** A Board can be thought of as your “visual organizer.” A Board can consist of one or more charts. There are two types of Boards: **Featured Boards** and **Custom Boards**.
 
-* **Featured Boards -** out-of-the-box Boards that appear soon after connecting your data to Panoramic. A Featured Board typically contains 5+ charts to provide you inspiration into how to analyze and visualize your marketing performance based on the type of channel \(i.e. programmatic advertising, paid social advertising, etc.\)
-* **Custom Boards** - A Custom Board is a collection of charts that you, your team, or Panoramic’s internal team have created which are tailored to your specific reporting needs
+* **Featured Boards -** Part of the enterprise offering, Featured boards provide out-of-the-box report templates that appear soon after connecting your data to Panoramic. A Featured Board typically contains 5+ charts to provide you inspiration into how to analyze and visualize your marketing performance based on the data source you've connected \(i.e. Facebook Ads, Google Search, etc.\)
+* **Custom Boards** - A Custom Board is a collection of charts that you, your team, or Pano’s Analytics Consultants have created which are tailored to your specific reporting needs
 
-**CHART -** Below the Board within the diagram above are three sample Chart types. A “Chart” in Panoramic is considered any visual, be it a chart, graph, or table. As you can see in the example, multiple Charts can comprise a single Board. A Chart “type” is the type of chart used to display your performance data. You can mix and match Charts from both **Featured Boards** and **Custom Boards.**
+**DATAFRAME -** Within each board lives one or more Dataframes. A Dataframe in Pano is considered any view or your underlying data, either in the same format as it exists in the data warehouse or transformed to match your reporting needs. These Dataframes can either be presented as tables or using any of the available chart types. As you assemble your transformed data, its common to think of boards similar to schemas in a database and Dataframes as the tables within the schema.
 
-**FIELDS -** Below the Chart\(s\) in the diagram are Metrics and Dimensions, which are used to populate visuals or Charts according to your specific needs. Most organizations set marketing key performance indicators, or KPIs, which can be used to determine the right Metrics and Dimensions you need to best view your marketing data. Metrics and Dimensions provide context to the data sources that feed raw performance numbers.
+**FIELDS -** Each Dataframe is made up of one or more fields. Fields split up into two types, dimensions or metrics. At its most basic level, metrics are fields that can be aggregated for reporting purposes and dimensions are the fields that are used to group metrics into buckets. Fields are used to populate tables and charts according to your specific needs. Most organizations have a set of key performance indicators, or KPIs, which can be used to determine the right Metrics and Dimensions to include in your Dataframes.
 
-* **Metrics** - Typically measurable items that can be considered a conversion or might require a calculation. Common examples include Cost Per Thousand Impressions \(CPM\), Video View Rate, Return on Ad Spend \(ROAS\), Click Through Rate \(CTR\).
-* **Dimensions** - Attributes of a user or visitor, including where they saw your ad \(Region, Country\) or what type of audience they fell under \(Males, Ages 20-30, etc.\)
+* **Metrics** - Measurable values that can be aggregated for reporting. Metrics are restricted to certain data types where algebraic or logical functions can be applied. Common examples include Cost Per Thousand Impressions \(CPM\), Video View Rate, Return on Ad Spend \(ROAS\), Click Through Rate \(CTR\).
+* **Dimensions** - Technically defined as anything that is not a dimension, these can include entities, attributes of entities or any other non-metric breakdowns available in the data. Common examples include the ID of a customer, where they are located \(Region, Country\) or what type of audience they fell under \(Males, Ages 20-30, etc.\)
 
-**DATASET -** The foundation of any individual Chart is the Data Source\(s\) that feed those visualizations. These Data Sources represent the raw data that is piped from an external tool, such as Facebook Ads or The Trade Desk. Our data team will pull all available data for each desired source, as far back in time as the source allows. Historical data \(often described as data over 6 months old\) can be used for accurate comparison and aggregation, often in the form of Benchmarks \(see [here]() more information on Benchmarks\).
+**DATASET -** The foundation of any Dataframe is the one or more Datasets that feed into it. These Datasets represent the raw data that is piped from an external API, such as Facebook Ads or The Trade Desk into your connected data warehouse. During the data modeling phase each group of tables from a single source should be defined as a Dataset. These Datasets can then be pulled into a Dataframe and blended to meet your reporting needs.
 
 ### **Overall Navigation**
 

@@ -16,6 +16,62 @@ Here are some good resources to learn more about data visualization:
 
 
 
+## What’s our mantra?
+
+Sounds great, but building software is making hundreds of small decisions constantly. It’s easy to get distracted, and what started as “simple” turns into “complicated” pretty quickly.
+
+To help us keep focused, we had three mantras we repeated to ourselves.
+
+1. Above all else, communicate data accurately.
+2. Make the right thing easy and the wrong thing hard.
+3. If we must do the wrong thing, speed bumps not fences.
+
+Let’s break each of those down.
+
+#### Above all else, communicate data accurately.
+
+Our platform is here to transform your marketing data. It should at least be accurate. Even if it means making charts less “visually appealing.”
+
+To be clear, we don’t like ugly charts! But take 3D charts as an example. They might look cool, but they’ve got a few problems:
+
+* Scientific research shows that humans have a hard time perceiving volume \*
+* 3D charts introduce a forced perspective that can make different shapes look the same depending on the viewing angle \*\*
+
+If we really mean accuracy above all else, that means that 3D charts have got to go away!
+
+\* Cleveland and McGill’s 1984 classic study [Graphic Perceptions](https://www.jstor.org/stable/2288400)
+
+\*\* Paul Reiman’s article [3D Pie Charts are Evil](https://www.getnerdyhr.com/3d-pie-charts-are-evil/)
+
+#### Make the right thing easy and the wrong thing hard.
+
+Anyone who’s ever opened a spreadsheet knows that assembling data can get complicated quick. And it should be, building a great data visualization should have a lot of thought behind it.
+
+So instead of skipping the complexity, we take the “right” way of making charts, and make it feel like the carpool lane at rush hour. 
+
+“Right” can mean a lot of things, so we’re lucky to build upon the work of a lot of great thinkers ahead of us:
+
+* The Financial Times’ [Visual Vocabulary](https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary)
+* Pratap Vardhan’s [Visual Vocabulary Vega Edition](https://gramener.github.io/visual-vocabulary-vega/#)
+* Dr. Andrew Abela’s [Chart Chooser Diagram](https://extremepresentation.typepad.com/files/choosing-a-good-chart-09.pdf)
+
+And if that means that doing anything outside of what’s suggested is a little more difficult \(still possible, just more difficult\), we think that’s the right tradeoff.
+
+#### If we must do the wrong thing, speed bumps not fences.
+
+The wrong thing is hard, but it’s still possible. And that means, if you’re new to data visualizations, you might make a chart that is accidentally misleading.
+
+To deal with that, we won’t stop you from doing the “wrong” thing. After all, it might be a simple difference in opinion. But if you’re a beginner, then we’ll warn you that you’re heading into danger territory so that you’re always aware of the risk.
+
+Let’s say you’re running marketing on Facebook Ads.
+
+* You have some campaigns with an APP\_INSTALLS objective, and other campaigns with a VIDEO\_VIEWS objective.
+* Now you build a chart, but your mind is thinking about a different workspace, and you filter to show campaigns that have either the VIDEO\_VIEWS or LINK\_CLICK objectives.
+
+Wait a minute! The account only had APP\_INSTALLS and VIDEO\_VIEWS. If you were looking quickly, you might mistake the chart to include both objectives.
+
+Instead, we’ll warn you that you don’t have any campaigns with LINK\_CLICKS. You can still save the filter and carry on, but now we know you’re not walking away with a mistaken impression.
+
 ## Using charts to express insights
 
 ## Choosing the best chart type

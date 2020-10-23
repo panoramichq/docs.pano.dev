@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [The Modern Marketing Stack](the-modern-marketing-stack.md)
+* [The Modern Data Stack](the-modern-marketing-stack.md)
 * [An Introduction to Data Analysis](how-does-data-work.md)
 
 ## Getting Started
