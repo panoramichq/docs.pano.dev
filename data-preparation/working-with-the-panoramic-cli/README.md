@@ -1,6 +1,12 @@
+---
+description: Getting started with the CLI
+---
+
 # Panoramic CLI
 
 ## Prerequisites
+
+* Python3
 
 ## Installing the CLI
 
@@ -34,11 +40,11 @@ Then, see all available FDQ connection slugs through
 
 Using a FDQ connection slug, you can run the scan command, which will create models that can fetch data from the tables in the FDQ connection. Scan can be either run on all of the resources available to the connection:
 
-`pano scan <fdq-connection-slug>`
+`pano scan <connection-slug>`
 
 Since the scan takes a while, you’d usually want to limit the scan using a SQL wildcard syntax \(% is the wildcard character, in this case\)
 
-`pano scan sf -f metrics3_stg.adwords_views.%`
+`pano scan sf -f stg.adwords_metrics.%`
 
 At this point, you probably want to assign the model to a dataset.
 
@@ -48,20 +54,17 @@ Before you start working with models, make sure your folder is representing the 
 
 `pano pull`
 
-Currently, creating a dataset is a bit manual-labor intensive operation. In the future, a CLI command will do it for you.
+Create a dataset by creating a new directory and adding a dataset file inside. Running the following command will help:
 
 `mkdir a_cool_dataset \ && \ echo \ "dataset_slug: a_cool_dataset display_name: ACoolDataset" \ > a_cool_dataset/dataset.yaml`
 
 In order to assign the model to the dataset, just copy it from the scanned folder to the dataset folder: 
 
-`cp scanned/sf.metrics3_stg.adwords_views.entity_accounts.model.yaml a_cool_dataset`
+`cp scanned/db.stg.adwords_metrics.entity_accounts.model.yaml a_cool_dataset`
 
 In order to push the changes to the platform, just do
 
 `pano push`
 
-Congratulations, now you're ready to start transforming your data in the Platform!  
-
-
-## Troubleshooting
+Congratulations, now you're ready to start transforming your data in the Platform!
 
