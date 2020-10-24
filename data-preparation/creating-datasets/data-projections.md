@@ -4,16 +4,10 @@ description: Coming Soon...
 
 # Data Projections
 
-sometimes there is data that is structured in a format that isnt ideal for panoramic's query service, in these cases its necessary to transform the datasets into a data structure that can be queried. There are a few common examples that are covered with some out-of-the-box projection templates. These include:
+Sometimes there is data that is structured in a format that isn't ideal for analytical querying. In these cases it's necessary to transform the table to a structure that can be queried correctly. Pano calls these transformations **Data Projections** and they allow you to write any raw SQL transformation that you need. Pano then pushes these projections into your data warehouse to ensure they are applied prior to any subsequent transformations. Pano includes some common examples of transformations to help you prepare your data faster. These include:
 
-* deduplication of rows in a table
-* Un-pivoting or un-flattening datasets that have already been transposed
-
-This is also a great solution to apply any custom transformations that you need in order to manipulate your data to a form where it is "report-ready"
-
-You have the ability to write pure SQL transformations that will be executed by panoramic to ensure data is properly transformed
-
-multiple transformations can be chained together in a sequential order so you can perform complex transformations on your data
+* deduplication of rows in an entity table
+* Pivoting or flattening datasets that store metrics in rows instead of columns
 
 
 

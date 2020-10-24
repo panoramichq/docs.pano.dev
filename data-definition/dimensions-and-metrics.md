@@ -1,43 +1,22 @@
 ---
-description: Dimensions and metrics
+description: Dimensions and Metrics
 ---
 
 # Fields
 
-## What is a field?
-
-
-
-### Attributes of a field
+## Attributes of a field
 
 #### Field Slug
 
-just as we do with models above, every field is defined by a unique, human readable slug. This field never changes once its created and must be globally unique across your company. The field slug is what users see and work with when working with the CLI and directly in model files. You can also see the slug in the URL when viewing field details. However, in general, the slug is there so that the code works correctly and the platform should use the display name in almost all scenarios.
+just as we do with models, every field is defined by a unique, human readable slug. This field never changes once its created and must be globally unique across your company. The field slug is what users see when working with the CLI and directly in model files. You can also see the slug in the URL when viewing field details. However, in general, the slug is there so that the system functions correctly.
 
-#### Dataset Fields vs Blended Fields
+#### Mapped Fields vs Calculated Fields
 
-Dataset fields are created automatically through the database scan feature but they can also be created manually if a user desires. Mapped fields are the lowest level in the calculation hierarchy because all mapped fields reference specific columns in the data warehouse. Mapped fields must all have a data type declared for validation purposes as well as an aggregation type declared \(if its a metric\) so that the Panoramic system knows how to aggregate the data.
+Mapped fields are created automatically by the database scan but they can also be created manually if needed. Mapped fields are the lowest level in the calculation hierarchy because all mapped fields reference specific columns in the data warehouse. Mapped fields must all have a data type declared for validation purposes as well as an aggregation type declared \(if its a metric\) so that Pano knows how to aggregate the data.
 
-Blended fields are different then mapped fields because custom fields all reference other fields that exist in the system. You can think of custom fields like custom dimensions and metrics that you derive based on other existing pieces of data.
+Calculated fields are different then mapped fields because calculated fields always reference other fields that already exist in Pano. You can think of calculated fields like custom dimensions and metrics that you derive based on other existing pieces of data.
 
-* Ex: a data warehouse has columns date, impressions and clicks. Each of these three columns would be associated with a corresponding mapped field. If you wanted to then create a custom metric like “Click through rate” then you would create a custom field that is derived from clicks and impressions via a calculation clicks / impressions
-
-#### Blended Fields
-
-One of the biggest benefits of using Panoramic as your marketing visualization tool, is all the work our teams do to pre-map and model the metrics and dimensions we pull in from the marketing platforms you connect. 
-
-Some metrics that we pull in exist in multiple platforms, and are mapped together "out of the box", those are one of our **Global taxons.** 
-
-Example: "Marketing Spend" exists in Facebook, Twitter and Snapchat. When you select Marketing Spend in Explore mode, it will automatically map across all 3 of those platforms. 
-
-However, in order to enable [**Data Blending**](http://help.panoramichq.com/en/articles/3999904-data-blending-part-1) the Panoramic Glossary generates **NameSpaced Taxons** for every metric, for every platform that it exists on. 
-
-Marketing Spend = Global Taxon  
-\(Facebook Ads\) Spend= Namespaced Taxon  
-\(Twitter\) Spend = Namespaced Taxon  
-\(Snapchat\) Spend = Namespaced Taxon
-
-By breaking out the metric by platform, it allows you to create [**Custom Terms**](http://help.panoramichq.com/en/articles/4043962-custom-terms) with much greater flexibility.
+* Ex: a data warehouse has columns date, impressions and clicks. Each of these three columns would be associated with a corresponding mapped field. If you wanted to then create a custom metric like “Click through rate” then you would create a calculated field that is derived from clicks and impressions via a calculation "clicks / impressions"
 
 #### Field Type
 
@@ -47,20 +26,18 @@ Metrics - Conversely, metric fields are any fields that are not dimensions. Metr
 
 #### Data type
 
-Data type appears in two locations in the panoramic system and is used to declare and validate that all the values for a given field match the defined type, e.g. if data type is set to number, then the panoramic system will assert that all of the values are numbers and throw an error if it finds a string value
+Data type appears in two locations in Pano and is used to declare and validate that all the values for a given field match the defined type, e.g. if data type is set to number, then the panoramic system will assert that all of the values are numbers and throw an error if it finds a string value
 
-Model Data Types - Data Type in scanned model files is extracted directly from the data connection and is a read-only reference to show the defined column type in the underlying data warehouse. Panoramic never alters the underlying model data so this field is available strictly for helpful context
+* Source Data Types - Data Type in scanned model files is extracted directly from the data connection and is a read-only reference to show the defined column type in the underlying data warehouse. Pano never alters the underlying model data so this field is available strictly for helpful context
+* Data type - In pano, users are able to redefine the data type of a given field. This allows users to take advantage of additional data types that are not supported by databases. Common use cases are to define data type as money or percent which then tells panoramic to add a currency symbol or to multiple by 100 when displaying the values
 
-Field data type - In panoramic, users are able to redefine the data type of a given field.
-
-* This allows users to take advantage of additional data types that are not supported by databases. Common use cases are to define data type as money or percent which then tells panoramic to add a currency symbol or to multiple by 100 when displaying the values
-* This also allows panoramic to convert a value from one type to another at query time. Sometimes you have a number, like budget, that is part of a string. You can use functions to parse out the budget and then convert it to a numeric money type so that the values can be safely aggregated.
+This also allows Pano to convert a value from one type to another at query time. Sometimes you have a number, like budget, that is part of a string. You can use functions to parse out the budget and then convert it to a numeric money type so that the values can be safely aggregated.
 
 #### Aggregation type
 
-In order for a field to be treated as a metric, it must have an aggregation type defined. A complete list of aggregation types can be found in THIS ARTICLE on supported functions.
+In order for a field to be treated as a metric, it must have an aggregation type defined. A complete list of aggregation types can be found on the functions page.
 
-Each field can be defined with one and only one aggregation type
+Each mapped field can be defined with one and only one aggregation type
 
 Aggregation type can only be defined on mapped fields, all custom fields are derived from mapped fields and inherit the aggregation type of the underlying mapped fields.
 

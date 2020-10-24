@@ -1,6 +1,6 @@
 # Whitelist Panoramic IP Addresses
 
-We connect to your data sources using a fixed set of IP addresses. To ensure that Panoramic can connect to your data sources, you must ensure these IP addresses are whitelisted in your firewall.
+We connect to your data sources using a fixed set of IP addresses. To ensure that Pano can connect to your data warehouse, you must ensure these IP addresses are whitelisted in your firewall.
 
 Please be aware that while we try to ensure the stability of these addresses, they may change in the future. We will notify our users when these addresses are changed.  
 

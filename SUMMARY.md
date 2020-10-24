@@ -22,11 +22,9 @@
   * [Data Discovery](data-preparation/data-connections/scanning-your-data-warehouse.md)
   * [Whitelist Panoramic IP Addresses](data-preparation/data-connections/whitelist-panoramic-ip-addresses.md)
   * [Connect to your Database](data-preparation/data-connections/creating-a-panoramic-db-user.md)
-  * [CSV Uploads](data-preparation/data-connections/csv-uploads.md)
 * [Datasets](data-preparation/creating-datasets/README.md)
   * [Data Projections](data-preparation/creating-datasets/data-projections.md)
   * [Data Models](data-preparation/creating-datasets/untitled.md)
-  * [Dataset Templates](data-preparation/creating-datasets/dataset-templates.md)
 
 ## Data Definition
 
