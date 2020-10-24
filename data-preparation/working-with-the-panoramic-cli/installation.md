@@ -1,3 +1,7 @@
+---
+description: Installation details for the Pano CLI
+---
+
 # Installation
 
 We recommend using one of our OS-specific guides for help with installing the Panoramic CLI. If your OS is not listed, or you prefer to use`pip`, please see the instructions below.

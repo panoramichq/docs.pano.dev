@@ -2,7 +2,7 @@
 
 ## What is Data Discovery?
 
-Data discovery is the first step in the data transformation process. Typically the data is profiled using profiling tools or sometimes using manually written profiling scripts to better understand the structure and characteristics of the data and decide how it needs to be transformed.
+Data discovery is the first step in the data transformation process. Typically the data is profiled using profiling tools or sometimes using manually written profiling scripts to better understand the structure and characteristics of the data and decide how it needs to be transformed. Pano has built in data discovery and profiling tools so you don't need to write any custom scripts.
 
 ## How Pano Discovers Your data
 
