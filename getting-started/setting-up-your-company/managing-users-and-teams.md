@@ -1,14 +1,14 @@
 # Users
 
-## **Add Users**
+## **Adding Users**
 
-Once you’ve activated a Collection, created a Workspace, and determined your Teams, it’s time to add Users and grant others access to Panoramic so you can all begin to visualize and analyze your data together.
+It’s time to add Users and grant others access to Pano so you can all begin to visualize and analyze your data together.
 
-Users are any colleague or representative who you would like to give access to your marketing performance. Within the Panoramic platform, there are three types of User Roles: Admin, Edit, and View Users. See below for a breakdown of functionality per role.
+Users are any colleague or representative who you would like to give access to your data. Within Pano, there are three types of User Roles: Admin, Edit, and View Users. See below for a breakdown of functionality per role.
 
 To Add a User at the Company Level:
 
-1. Log in to your Panoramic account
+1. Log in to your Pano account
 2. Under your Company Settings Menu, navigate to the **USERS** tab
 3. Select **ADD USERS** on the top right corner
 4. Enter the User’s company Email Address, Team, and Role
@@ -32,6 +32,8 @@ _Note: Users are added at the Company level only, while Collaborators are added 
 | View Published Boards and Charts | ✔️ | ✔️ | ✔️ |
 
 ## Setting up Single Sign-on \(SAML\)
+
+\[Enterprise Tier Only\]
 
 Single Sign-on \(SSO\) is an added security benefit and convenience that is available to our enterprise tier clients. If you would like to connect the Panoramic platform to your existing identity provider, please reach out to your account rep.
 

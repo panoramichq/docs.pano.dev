@@ -1,12 +1,12 @@
 # Teams
 
-### **Onboarding Step 3: Add Teams**
+### **Adding Teams**
 
-Now that you’ve created a Workspace or two, and added Collections to these Workspaces, it’s time to create Teams. Teams are groups of Users that you can set up to enable quick communication.
+Teams are groups of Users that you can set up to enable quick communication.
 
 To Create a Team:
 
-1. Log in to your Panoramic account
+1. Log in to your Pano account
 2. Under your Company Settings Menu, navigate to the **TEAMS** tab
 3. Select **CREATE TEAM** on the top right corner
 4. Enter the Team name you wish to use. Common examples include Data Science, Marketing, Operations, Paid Media, etc.

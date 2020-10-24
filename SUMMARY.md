@@ -8,10 +8,8 @@
 
 * [Platform Overview](getting-started/platform-overivew.md)
 * [Company Settings](getting-started/setting-up-your-company/README.md)
-  * [Sharing](getting-started/setting-up-your-company/sharing.md)
   * [Teams](getting-started/setting-up-your-company/teams.md)
   * [Users](getting-started/setting-up-your-company/managing-users-and-teams.md)
-  * [Collections](getting-started/setting-up-your-company/collections.md)
 * [Your Profile](getting-started/your-profile.md)
 * [Workspaces](getting-started/creating-workspaces.md)
 

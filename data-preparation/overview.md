@@ -17,6 +17,14 @@ This commonly takes form in the following ways
 * structuring datasets - transforming unstructured JSON or arrays of data into easier to query, relational, columnar data tables
 * Deduplication of rows - sometimes the same report is fetched multiple times from an api, If both of these reports include the same date then there is a chance the metrics could be duplicated, this is why its important to declare identifiers, which can be used to remove duplicates and only query the latest, most up-to-date version of a specific report
 
+## 
+
+## Data Preparation
+
+> "Data preparation is a must-have technology for enabling business teams to find, prepare and share heterogeneous data for their integration, analytics and data science use cases" - Gartner
+
+> **"Data preparation** is the act of manipulating \(or pre-processing\) raw data \(which may come from disparate data sources\) into a form that can readily and accurately be analysed, e.g. for business purposes. Data preparation is the first step in data analytics projects and can include many discrete tasks such as loading data or data ingestion, data fusion, data cleaning, data augmentation, and data delivery." - Wikipedia
+
 ## How Does Panoramic Help?
 
 UPDATE

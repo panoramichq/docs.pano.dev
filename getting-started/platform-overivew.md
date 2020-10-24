@@ -27,38 +27,38 @@ When getting started using a new platform, it can often take time to “learn th
 
 **DATASET -** The foundation of any Dataframe is the one or more Datasets that feed into it. These Datasets represent the raw data that is piped from an external API, such as Facebook Ads or The Trade Desk into your connected data warehouse. During the data modeling phase each group of tables from a single source should be defined as a Dataset. These Datasets can then be pulled into a Dataframe and blended to meet your reporting needs.
 
-### **Overall Navigation**
+## **Overall Navigation**
 
 ![](../.gitbook/assets/2%20%281%29.png)
 
-_**Main Menu Navigation**_
+### **Main Menu Navigation**
 
 If you are an **Admin**, you will see the Main Menu, which displays three primary tabs:  
 **WORKSPACES, INBOX**, and **COMPANIES.**
 
-* **WORKSPACES -** secure areas for teams to collaborate around their data, while allowing Admins to customize permissions \(e.g. giving access to one agency for certain campaigns, sectioning off access per teams for different product lines, etc.\). Within one Company, there can be multiple Workspaces. Common examples of using more than one Workspace include separating marketing data by campaigns, product lines, store locations, or movie titles.
-* **INBOX -** destination for all your message types \(Public, Private, Team-specific\) across multiple Workspaces. Inbox is especially useful if your Company uses multiple Workspaces.
-* **COMPANIES -** independent entities, such as individual companies or distinct departments within a single company, that use one or more Workspaces to segment, map and visualize their data. Companies can set permissions for all Workspaces such as the **Data Glossary** or designate groups of users, also known as **Teams**.
+* **WORKSPACES -** secure areas for teams to collaborate around their data, while allowing Admins to customize permissions \(e.g. giving access to one agency for certain campaigns, sectioning off access per teams for different product lines, etc.\). Within one Company, there can be multiple Workspaces. Common examples of using more than one Workspace include separating data by marketing channel, product lines, store locations, or movie titles. All users within a Workspace will see the exact same content, from Boards to Dataframes to comments, Pano is designed this way to make sure everyone on the team is seeing the same information and can collaborate easily.
+* **INBOX -** destination for all your message types \(Public, Private, Team-specific\) across all of your Workspaces. Inbox is especially useful if your Company uses multiple Workspaces. The Inbox is tailored for each user to include all of the messages that are most relevant to them.
+* **COMPANIES -** independent entities that define a Pano billing relationship. Companies are the highest level abstraction for data in the Pano platform. No data, fields, models or any other Pano objects can ever be shared across companies. Companies can set permissions for all Workspaces such as which fields to expose from the **Data Glossary** or which users should have access.
 
-_**Workspace Menu Navigation**_
+### **Workspace Menu Navigation**
 
 ![](../.gitbook/assets/3.png)
 
-After creating a Workspace within your Company, the new Workspace will appear upon logging in. After selecting a Workspace, you will see the Workspace Menu, which displays five primary tabs:
+After creating and selecting a Workspace, you will see the Workspace Menu, which displays five primary tabs:
 
 **FEED, FEATURED BOARDS, CUSTOM BOARDS, GLOSSARY,** and **SETTINGS.**
 
 * **FEED -** destination for all your message types \(Public, Private, Team-specific\) within a given Workspace.
-* **FEATURED BOARDS -** as described above, these are out-of-the-box Boards that come with pre-set Charts to help you quickly visualize your marketing performance without the need for any customization or ramp-up time. Once you activate a Collection \(see here for further details\), a Featured Board connecting visuals related to your specified Data Sources will automatically appear within this tab.
-* **CUSTOM BOARDS** - as described above, these are any Boards that have been customized for you from Panoramic’s Marketing Science team, or Boards that you or your organization has created \(see here on details around creating a custom Board\) will appear within this tab.
-* **GLOSSARY** - any terms that Panoramic has mapped across platforms \(i.e. Ad Account in Facebook = Advertiser in The Trade Desk\) will appear here with a clear definition. In addition, any terms that you or your colleagues create that are specific to your organization will appear here \(see here for more information on Panoramic’s Glossary\).
-* **SETTINGS** - here you will be able to customize your Workspace, including adding Collaborators \(Users invited at the Company level\), connect relevant Data Sources, activate Collections, re-name your Workspace, and add an image to your Workspace.
+* **FEATURED BOARDS -** \[Enterprise Tier only\] - These are out-of-the-box Boards that come with pre-set Charts to help you quickly visualize your marketing performance without the need for any customization or ramp-up time.
+* **CUSTOM BOARDS** - These are any Boards that have been built and customized by collaborators in the Workspace. Each custom board can have the name, description, date range selector and default comparison defined by the board creators. 
+* **GLOSSARY** - any fields that have been defined in your data modeling or created in the platform will appear here. You can customize these fields by adding a clear definition, abbreviations, formatting and other helpful attributes.
+* **SETTINGS** - here you will be able to customize the general details of your Workspace, including adding Collaborators, connecting your Datasets, re-naming your Workspace, and add an image icon to your Workspace.
 
-_**Inbox Main Navigation**_
+### **Inbox Main Navigation**
 
 ![](../.gitbook/assets/4%20%281%29.png)
 
-Just below the Workspaces tab within the Main Menu Navigation is Your Inbox. Inbox allows you to work across multiple Workspaces, combining private, public and team-specific messages in one place. After selecting Inbox, you will see the following options to hand side, which display the following groups:
+Just below the Workspaces tab within the Main Menu Navigation is Your Inbox. Inbox allows you to work across multiple Workspaces, combining private, public and team-specific messages in one place. After selecting Inbox, you will see the following options on the left menu:
 
 * **READ STATUS**
   * **All** - displays all Read and Unread Messages
@@ -73,19 +73,20 @@ Just below the Workspaces tab within the Main Menu Navigation is Your Inbox. Inb
   * **I'm Following -** displays ONLY messages that you are Following
   * **@ Mentions -** displays ANY messages that you are directly mentioned via the @mention. These can include both private and public messages.
 
-_**Company Main Navigation**_
+### **Company Main Navigation**
 
 ![](../.gitbook/assets/5%20%281%29.png)
 
-After creating a Company within Panoramic, you will see the **Company Settings Menu**, which displays seven primary tabs:
+After creating a Company within Panoramic, you will see the **Company Settings Menu**, which displays the following tabs:
 
-**COMPANY, SHARING, WORKSPACES, USERS, TEAMS, GLOSSARY, COLLECTIONS.**
+**COMPANY, SHARING, WORKSPACES, USERS, TEAMS, DATA CONNECTIONS, DATASETS, GLOSSARY.**
 
-* **COMPANY -** here you can change the name of your Company should you need to.
-* **SHARING -** view or share access to any other companies working with your marketing data, such as consultants or agencies
+* **COMPANY -** here you can edit basic settings like changing the name of your Company should you need to.
+* **SHARING -** \[Enterprise Tier Only\] view or share access to any other companies working with your marketing data, such as consultants or agencies
 * **WORKSPACES -** displays any Workspace\(s\) that have been created under your Company
-* **USERS -** displays active and inactive users within your Company. You can also add users or remove individual access here
+* **USERS -** displays active and inactive users within your Company. You can also invite new users or remove individual access here
 * **TEAMS -** create teams for groups of users to easily communicate with one another.
-* **GLOSSARY -** displays all mapped terms across Panoramic, as well as custom terms you have created
-* **COLLECTIONS -** enable Collections to get started connecting and visualizing your data
+* **DATA CONNECTIONS** - List of data warehouses that have been connected to the Pano platform. Each data connection will be scanned and the visible tables within the connection will become available for data modeling
+* **DATASETS -** Datasets are common groupings of data based on the data's original source or meaning. It's important to define datasets to create meaningful groups of data for easier and more useful analysis. Two examples of common datasets could be a set of Facebook Marketing tables pulled in by Fivetran or mobile app activity tables uploaded by Appsflyer. 
+* **GLOSSARY -** displays all mapped fields across all Workspaces within that company, this is beneficial for company admins to track and audit all the metrics that are being used.
 
