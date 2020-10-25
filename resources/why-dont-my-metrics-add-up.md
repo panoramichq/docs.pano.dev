@@ -76,7 +76,7 @@ Make sure that …
 * If you want to view top-level metrics, download from a top-level report
 * Only if you want to view a breakdown dimension, download from a report that includes the breakdown dimension
 
-Fortunately, if you’re a part of the Panoramic platform, we’ll automatically select the correct report for you based on what dimensions and metrics you’re requesting.
+Fortunately, if you’re a part of the Pano platform, we’ll automatically select the correct report for you based on what dimensions and metrics you’re requesting.
 
 #### Use Breakdowns for Comparison
 
@@ -88,9 +88,7 @@ Be cautious when showing sums or totals for breakdowns. For example ...
 Instead, use breakdown dimensions to show the differences between breakdowns, so for example ...
 
 * Using a grouped column chart to show the different in unique impressions between each keyword.
-* Using a table to show the number of impressions for each age bucket
-
-Fortunately, if you’re part of the Panoramic platform, you’ll never see a featured board with a chart that misrepresents a breakdown dimension so you never have to doubt whether the numbers are accurate.
+* Using a table to show the number of impressions for each age bucket.
 
 #### Additional Reading
 

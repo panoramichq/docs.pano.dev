@@ -22,14 +22,14 @@ Calculated fields are different then mapped fields because calculated fields alw
 
 Dimensions - dimensions are fields where you want all unique values displayed in your output models. This means that dimension fields are not aggregated in any way and are, instead, used to group data by. In SQL you can think of dimensions as the list of columns included in thee GROUP BY clause of your SELECT statement
 
-Metrics - Conversely, metric fields are any fields that are not dimensions. Metrics are aggregated in some way by a set of dimensions, some common aggregation types are sum, count, average, etc. Metrics must have an aggregation type defined or they will be treated as dimensions. Metrics can be divided, grouped or split based on any number of available dimensions, often these different aggregations are stored in permanent or temporary tables. The panoramic query service will dynamically choose the best table to source metrics from based on the set of dimensions the user requests.
+Metrics - Conversely, metric fields are any fields that are not dimensions. Metrics are aggregated in some way by a set of dimensions, some common aggregation types are sum, count, average, etc. Metrics must have an aggregation type defined or they will be treated as dimensions. Metrics can be divided, grouped or split based on any number of available dimensions, often these different aggregations are stored in permanent or temporary tables. The Pano query service will dynamically choose the best table to source metrics from based on the set of dimensions the user requests.
 
 #### Data type
 
-Data type appears in two locations in Pano and is used to declare and validate that all the values for a given field match the defined type, e.g. if data type is set to number, then the panoramic system will assert that all of the values are numbers and throw an error if it finds a string value
+Data type appears in two locations in Pano and is used to declare and validate that all the values for a given field match the defined type, e.g. if data type is set to number, then the Pano system will assert that all of the values are numbers and throw an error if it finds a string value
 
 * Source Data Types - Data Type in scanned model files is extracted directly from the data connection and is a read-only reference to show the defined column type in the underlying data warehouse. Pano never alters the underlying model data so this field is available strictly for helpful context
-* Data type - In pano, users are able to redefine the data type of a given field. This allows users to take advantage of additional data types that are not supported by databases. Common use cases are to define data type as money or percent which then tells panoramic to add a currency symbol or to multiple by 100 when displaying the values
+* Data type - In pano, users are able to redefine the data type of a given field. This allows users to take advantage of additional data types that are not supported by databases. Common use cases are to define data type as money or percent which then tells Pano to add a currency symbol or to multiple by 100 when displaying the values
 
 This also allows Pano to convert a value from one type to another at query time. Sometimes you have a number, like budget, that is part of a string. You can use functions to parse out the budget and then convert it to a numeric money type so that the values can be safely aggregated.
 
@@ -66,7 +66,7 @@ Once you’ve published a dataset you can also create any fields that might be u
 
 #### To Create a Custom Field:
 
-1. Log in to your Panoramic account
+1. Log in to your Pano account
 2. Navigate to your Company Settings by selecting the **COMPANIES** tab from your home screen \(Admins only\)
 3. Under your Company Settings Menu, navigate to the **GLOSSARY** tab
 4. Select **CREATE TERM** on the far right of the Glossary screen

@@ -12,7 +12,7 @@ Also known as a “universe” of data, a dataset forms a group of tables that h
 
 * Datasets, like many objects in the pano system, are split into two parts, a slug and a display name.
   * A slug is a human readable identifier that is used by our system to uniquely identify an object in the pano system. Slugs are always unique strings and cannot be modified once they are created.
-* The Display name is the label associated with the slug that will be used for display in all platform UI elements and data models. Since the slug cannot be changed once its created, we offer the display name as the available field to use to modify how a Dataset is presented, updated and displayed for Panoramic users.
+* The Display name is the label associated with the slug that will be used for display in all platform UI elements and data models. Since the slug cannot be changed once its created, we offer the display name as the available field to use to modify how a Dataset is presented, updated and displayed for Pano users.
   * A common example of this idea is Google’s “Adwords” platform. You may first create a dataset to map “adwords” data and it would have a slug and display name of “Adwords”. However Google decided to rebrand its platform to “Google Ads”. In our system the dataset slug would still remain “adwords” but you can easily update the display name to “Google Ads” without having to rebuild all of your Dataframes.
 * In the UI you can create and manage Datasets directly, you will not need to create a slug in the UI as one will be created for you based on the first display name you input.
 * In the CLI you should create a new folder per Dataset that you wish to create and name that folder with the same name as the dataset slug.
