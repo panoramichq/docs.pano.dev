@@ -21,7 +21,7 @@
   * [Installation](data-preparation/working-with-the-panoramic-cli/installation.md)
 * [Data Connections](data-preparation/data-connections/README.md)
   * [Data Discovery](data-preparation/data-connections/scanning-your-data-warehouse.md)
-  * [Whitelist Panoramic IP Addresses](data-preparation/data-connections/whitelist-panoramic-ip-addresses.md)
+  * [Whitelist Pano IP Addresses](data-preparation/data-connections/whitelist-panoramic-ip-addresses.md)
   * [Connect to your Database](data-preparation/data-connections/creating-a-panoramic-db-user.md)
 * [Datasets](data-preparation/creating-datasets/README.md)
   * [Data Projections](data-preparation/creating-datasets/data-projections.md)

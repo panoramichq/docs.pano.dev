@@ -1,4 +1,4 @@
-# Whitelist Panoramic IP Addresses
+# Whitelist Pano IP Addresses
 
 We connect to your data sources using a fixed set of IP addresses. To ensure that Pano can connect to your data warehouse, you must ensure these IP addresses are whitelisted in your firewall.
 
