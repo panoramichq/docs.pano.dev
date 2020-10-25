@@ -61,13 +61,8 @@
 ## Resources
 
 * [Why Don't my Metrics Add Up?](resources/why-dont-my-metrics-add-up.md)
-* [Generating some common fields](resources/generating-some-common-fields.md)
-* [Metric Data Fan-out](resources/metric-data-fan-out.md)
-* [FAQ's](resources/faqs.md)
 * [Common Terms & Definitions](resources/common-terms-and-definitions.md)
 * [Data Security](resources/data-security.md)
 
 ## Release Notes
-
-* [Untitled](release-notes/untitled.md)
 
