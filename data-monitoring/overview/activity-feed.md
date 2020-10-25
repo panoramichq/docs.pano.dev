@@ -4,7 +4,7 @@
 
 ![](../../.gitbook/assets/9.png)
 
-Every time you enter a Workspace, your Feed will be your default screen. Once you save a Chat, it will appear within that Workspace Feed. If you would prefer to be notified of any activity around this Conversation, or organize your Conversations, there are several actions you can take, that appear on the right of a Conversation within your Feed:
+Every time you enter a Workspace, your Feed will be your default screen. Once you save a comment, it will appear within that Workspace Feed. If you would prefer to be notified of any activity around this Conversation, or organize your Conversations, there are several actions you can take, that appear on the right of a Conversation within your Feed:
 
 **NUMBER OF PEOPLE, MARK UNREAD/READ, MARK RESOLVED, MORE OPTIONS.**
 

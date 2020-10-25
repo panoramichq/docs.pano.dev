@@ -2,72 +2,17 @@
 
 ## **What Is Data Explorer?**
 
-Data Explorer allows any Admin or Edit user to create their own customized charts and boards, utilizing the connected data sources, in any Workspaces.
+Data Explorer allows any users to dive deeper into any Dataframe and explore additional Fields, breakdowns and visualizations and it allows Admin or Edit users to create their own customized charts and boards, utilizing the connected Datasets in any Workspace.
 
-* Charts visualize data for multiple data sources
-* Create multiple charts per board
-* Boards may include multiple chart types \(table vs. line graph\)
-* Feature that allows users to create Custom Boards
+**Data Blending** allows you to build charts that incorporate multiple platforms \(ie. Facebook/IG and Google Search\), and "blend" together metrics that do not natively map together. Data Blending is supported by Custom Fields, Data Explorer, and the Glossary.
 
-**Data Blending** allows you to build charts that incorporate multiple platforms \(ie. Facebook/IG and Google Search\), and "blend" together metrics that do not map across those platforms 1:1. Data Blending is supported by Custom Terms, Chart Builder, and the Glossary. This article will explain what those platform features are, and how you can use them to blend data cross-platform.
-
-> **Code execution** is the step whereby the generated code is executed against the data to create the desired output. The executed code may be tightly integrated into the transformation tool, or it may require separate steps by the developer to manually execute the generated code.
->
-> **Data review** is the final step in the process, which focuses on ensuring the output data meets the transformation requirements. It is typically the business user or final end-user of the data that performs this step. Any anomalies or errors in the data that are found and communicated back to the developer or data analyst as new requirements to be implemented in the transformation process.
-
-At the top you will see the chart that you've built and can publish, and at the bottom you'll see the tab for "Blended data", as well as the Facebook, Twitter and Snap specific data. These sections will show you which fields are supported by what data source.
-
-
+At the top of Data Explorer you will see the table or visualization that you've built as it will appear when its published to the board. Below it you'll see all the data that feeds into that Dataframe starting with the tab for "Blended data" and followed by tabs for each individual dataset that feeds in.
 
 ![](https://downloads.intercomcdn.com/i/o/206871411/2cefff9e78f5725e7d9a337a/image.png)
 
-## **How to build your data transformation**
+## **How to Build your Data Transformation**
 
-Sacha wants to build a chart for Facebook, Snap and Twitter data, but she knows that "Initiate Checkout" does not exist in Twitter and Snap. She wants an easy view of multi-platform data, even if all the platforms don't share the same metrics. What does she do?
-
-#### Select your Data Sources 
-
-The Data Sources displayed are determined by the Data Sources added to your Workspace. You can add multiple data sources, but your metrics and dimensions must map across all data sources. If they do not, you will need to use **Data Blending.** 
-
-Data sources are used to determine what subset of the data universe should be available in the transformation. You have the option to pull in data from as many data sources as you'd like but only the data sources linked to the workspace will be available to select.
-
-**Dimensions**
-
-Now it’s time to add Dimensions. Depending on the Chart type selected, you will be able to select Rows and Columns, or Dimensions and Breakdowns.
-
-![mceclip11.png](https://panoramic-e054c097e46a.intercom-attachments-1.com/i/o/195602717/3fa0a433db58b6693fc135d7/mceclip11.png)
-
-**Metrics**
-
-to add a Metric, such as CPM, to your new chart. Available metrics for this data source will be listed in the dropdown below
-
-**Additional Metrics**
-
-In addition to applying FILTERS, you can also apply **ADDITIONAL METRICS**, located below the Filters option. Select **ADD METRIC** to see a dropdown of available metrics.
-
-![mceclip15.png](https://panoramic-e054c097e46a.intercom-attachments-1.com/i/o/195602728/cfa58c451313565b5d08260d/mceclip15.png)
-
-Every visual chart type is paired with a table directly below it, where your additional metrics will be displayed. There is no limit to the number of metrics you can add.
-
-![mceclip16.png](https://panoramic-e054c097e46a.intercom-attachments-1.com/i/o/195602733/53e1cb0a455fae040485120f/mceclip16.png)
-
-Now that you’ve added **METRICS** and **DIMENSIONS**, your chart will start to come to life. If any data looks off, applying **FILTERS** is a good way to display the data most relevant to you.
-
-#### Sorting
-
-#### Limits
-
-#### Name & Description
-
-Now that you’ve created your chart, name your Chart and give it a Description.
-
-![mceclip17.png](https://panoramic-e054c097e46a.intercom-attachments-1.com/i/o/195602738/0dbd44867b54f4803ac7e9b8/mceclip17.png)
-
-#### Saving your Transformation
-
-
-
-![](../../.gitbook/assets/11.png)
+![The Anatomy of Data Explorer](../../.gitbook/assets/11.png)
 
 1. Navigate to a Custom Board within your desired Workspace
 2. Select **CREATE CHART** within your Custom Board

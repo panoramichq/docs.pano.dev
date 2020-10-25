@@ -1,17 +1,12 @@
 # Data Comparisons
 
-* Benchmarks & Comparisons
-  * Company benchmarks
-  * Custom defined benchmarks
-  * Period over period comparisons
-
 Visualizing your marketing performance is great, but it can be tough if you see a cost per click \(CPC\) of $0.50 without knowing whether that’s really low or really high.
 
-And that’s what benchmarks are for! Spoiler alert, a CPC of $0.50 it turns out is pretty good!
+Pano provides the ability to easily compare your data against a reference dataset. Often times this reference is a company benchmark or other historical data sample that helps provide context to the analysis. Adding comparisons is easy and can be toggled on or off in your Board settings.
 
 #### Comparing Apples to Apples
 
-Benchmarks are helpful to compare apples to apples. We do that for your marketing data by creating what we call the benchmark formula. It’s the list of dimensions that defines what makes two apples an “apple to apple” comparison. For example: 
+Benchmarks are helpful to compare apples to apples. We do that for your data by creating what we call the benchmark formula. It’s the list of dimensions that defines what makes two apples an “apple to apple” comparison. For example: 
 
 * For a generic Facebook Ads campaign, we’ll compare CPC against other Facebook Ads campaigns that share the same publishers \(Instagram, Facebook, or both\) and objectives \(such as video views\).
 
@@ -31,18 +26,17 @@ Tables and KPI charts that don’t plot values will use color to highlight the d
 
 To make it easier to show a benchmark, we’ll simplify the choices to a dropdown at the top of the page for you to pick between a few simple options. For example, when evaluating the performance of a Snap Ad Squad during the last 7 days, you can choose from:
 
-* Global Lifetime Benchmark to compare to all similar ad squads
 * Company Lifetime Benchmark to compare to any ad squad your company has run
 * Workspace Lifetime Benchmark to compare to any ad squads inside the same workspace
 * \(coming soon\) Previous Period to compare to how this ad squad did the previous 7 days
 
-When you create a chart, we’ll assemble the correct benchmark formula for you by using our data science team’s best practice for your data source, and seeing what dimensions you’re displaying in the chart. For example:
+When you create a chart, we’ll assemble the correct benchmark formula for you by using our data science team’s best practice for your dataset, and seeing what dimensions you’re displaying in the chart. For example:
 
 * For a column chart showing CPC for Twitter promoted tweets for the top 10 DMA’s, our system will auto-assemble a benchmark using other promoted tweets that share the same targeted placements, objectives, and interests.
 
 #### If we must do the wrong thing, speed bumps not fences.
 
-Sometimes, we won’t be able to display the benchmark for a particular metric. For example, we don’t benchmark spend or any related “magnitude” metrics as it’s impossible to have a “normal” spend when your paying your ads manager for performance. In those cases, we’ll warn you during the chart that a benchmark doesn’t exist. For example:
+Sometimes, we won’t be able to display the benchmark for a particular metric. For example, we don’t benchmark spend or any related “magnitude” metrics as it’s impossible to have a “normal” spend when you're deciding how much to spend. In those cases, we’ll warn you that a benchmark doesn’t exist. For example:
 
 * A line/combo chart showing impressions and likes will also show you a warning saying “Comparisons are unavailable for the following: impressions and like.” since both are dependent on how much money you spent to promote the ad.
 

@@ -35,123 +35,52 @@ This also allows Pano to convert a value from one type to another at query time.
 
 #### Aggregation type
 
-In order for a field to be treated as a metric, it must have an aggregation type defined. A complete list of aggregation types can be found on the functions page.
+In order for a field to be treated as a metric, it must have an aggregation type defined. A complete list of aggregation types can be found on the [**Functions & Calculations**](functions-and-calculations.md) page.
 
-Each mapped field can be defined with one and only one aggregation type
+Aggregation type can only be defined on mapped fields and each mapped field can be defined with one and only one aggregation type. All calculated fields are derived from mapped fields and inherit the aggregation type of the underlying mapped fields.
 
-Aggregation type can only be defined on mapped fields, all custom fields are derived from mapped fields and inherit the aggregation type of the underlying mapped fields.
-
-* Ex: I have two columns in my underlying data table, one for “spend” and one for “clicks”. I create one field called “spend” that maps to “spend” and has aggregation type = SUM and a second field called “clicks” that maps to “clicks” and has an aggregation type = SUM. I can now build a model with date, spend & clicks and panoramic will implicitly SUM\(spend\) and SUM\(clicks\) in the model.
-* Now, if I create a custom field called “Cost per Click” I will define the calculation as “spend / clicks”. Whenever users are building models, panoramic will implicitly aggregate the metrics prior to applying calculations, so the SQL for this calculation will evaluate to SUM\(spend\) / SUM\(clicks\)
+* Ex: I have two columns in my underlying data table, one for “spend” and one for “clicks”. I create one field called “spend” that maps to “spend” and has aggregation type = SUM and a second field called “clicks” that maps to “clicks” and has an aggregation type = SUM. I can now build a model with date, spend & clicks and Pano will implicitly SUM\(spend\) and SUM\(clicks\) in the model.
+* Now, if I create a calculated field called “Cost per Click” I will define the calculation as “spend / clicks”. Whenever users are building models, Pano will implicitly aggregate the metrics prior to applying calculations, so the SQL for this calculation will evaluate to SUM\(spend\) / SUM\(clicks\)
 
 #### Calculation
 
-For blended fields, this is where you can define and store the logic for how the field should be calculated. Pano works very similar to excel where you can apply functions to transform data however you need it.
+The calculation field tells Pano what logic to apply in order to derive the field. Field calculations are always applied in order, so if Field B has a calculation that includes Field A, then Field A's calculation will be executed and then the results will be passed into Field B. 
 
-See the page on functions & calculations for complete details
+Pano works very similar to excel where you can apply multiple functions to transform data however you need it. See the page on [**Functions & Calculations**](functions-and-calculations.md) for complete details
 
-#### Display formatting
+#### Display Formatting
 
 Every field has a number of additional attributes, or helpful “metadata” that are available to define field formatting and help users understand what the field means.
 
-Display name - The display name is the editable name for each field. This name can be nicely formatted and include special characters. The purpose of the display name is so that you can reference fields in a way that’s most familiar to your company. So if Facebook calls them AdSets and Snap calls them AdSquads, but in your company you call them all AdGroups, you can use display name to simplify the naming so you don’t need to retrain everyone in your organization.
+* **Display name -** The display name is the editable name for each field. This name can be nicely formatted and include special characters. The purpose of the display name is so to reference fields in a way that’s most familiar to your company. So if Facebook calls them AdSets and Snap calls them AdSquads, but in your company you call them all AdGroups, you can use display name to simplify the naming so you don’t need to retrain everyone in your organization.
+* **Abbreviation -** Abbreviation is available to set in case there are common industry acronyms for certain fields, this can come in handy when displaying tables with many columns, Pano will display the abbreviation instead of the long name. This is also great for search, so users can search for “CPM” even if the field has a display name of “Cost per Thousand Impressions”.
+* **Description -** The field description is available to give users a thorough explanation of each field, what it means, where it comes from and any other relevant information that could be useful to end users who may not be as familiar with the data
+* **Group -** This is a customizable, self-defined group that allows you to categorize similar fields so they are better organized and easier to find when building models. Some common groups include “Video engagement”, “social”, “geographic”, etc
+* **Units & symbols -** A growing set of display formatting options is available to tailor exactly how specific fields are displayed in Dataframes. These can include standard factors like significant figures and addition of % or currency symbols, but will also expand into displaying hyperlinks, creative thumbnails and other useful visual formatting of common data types.
 
-Abbreviation - Abbreviation is available to set in case there are common industry acronyms for certain fields, this can come in handy when displaying tables with many columns, Panoramic will display the abbreviation instead of the long name. This is also great for search, so users can search for “CPM” even if the field has a display name of “Cost per Thousand Impressions”.
+## **Creating a New Field**
 
-Description - The field description is available to give users a thorough explanation of each field, what it means, where it comes from and any other relevant information that could be useful to end users who may not be as familiar with the data
+![Create \| Edit Form for Fields](https://downloads.intercomcdn.com/i/o/207471634/5edb365769ddc83260d29545/image.png)
 
-Group - This is a customizable, user defined group that allows users to categorize similar fields so they are better organized and easier to find when building models. Some common groups include “Video engagement”, “social”, “geographic”, etc
+Once you’ve published a dataset you can also create any fields that might be useful to your company. 
 
-Units & symbols - a growing set of display formatting options are available to tailor exactly how specific fields are displayed in models. These can include standard factors like significant figures and addition of % or currency symbols, but will also expand into displaying hyperlinks, creative thumbnails and other useful visual formatting of common data types.
-
-*   <table>
-    <thead>
-      <tr>
-        <th style="text-align:left">Format</th>
-        <th style="text-align:left">
-          <p></p>
-          <p>Input Type</p>
-        </th>
-        <th style="text-align:left">Output</th>
-        <th style="text-align:left"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="text-align:left">TO_DURATION({field}, interval, [NULLIFY_ERRORS])</td>
-        <td style="text-align:left">Dimension or metric, interval units for the input (hours, minutes, seconds,
-          etc)</td>
-        <td style="text-align:left">Metric in hours, minutes, seconds format (00:00:00)</td>
-        <td style="text-align:left"></td>
-      </tr>
-      <tr>
-        <td style="text-align:left">TO_MONEY({field}, currency, [decimals - integer, optional, default 0],
-          [NULLIFY_ERRORS])</td>
-        <td style="text-align:left">dimension or metric, currency, integer for decimal places</td>
-        <td style="text-align:left">metric formatted with currency and decimal places</td>
-        <td style="text-align:left"></td>
-      </tr>
-      <tr>
-        <td style="text-align:left">TO_PERCENT({field}, [decimals - integer, optional, default 0], [NULLIFY_ERRORS])</td>
-        <td
-        style="text-align:left">dimension or metric, integer for decimal places</td>
-          <td style="text-align:left">metric multiplied by 100 with % and decimal places added</td>
-          <td style="text-align:left"></td>
-      </tr>
-      <tr>
-        <td style="text-align:left">TO_LINK()</td>
-        <td style="text-align:left">hyperlinks</td>
-        <td style="text-align:left"></td>
-        <td style="text-align:left"></td>
-      </tr>
-      <tr>
-        <td style="text-align:left">TO_IMAGE()</td>
-        <td style="text-align:left">Image rendering from URL</td>
-        <td style="text-align:left"></td>
-        <td style="text-align:left"></td>
-      </tr>
-    </tbody>
-  </table>
-
-## **Creating a new field**
-
-Navigate to the Glossary, and click "Create Term" just like you did in Custom Terms.
-
-Fill in all of the relevant information but this time, summing \(+\) all the platform-specific metric terms together.
-
-example calculation: Facebook \(Initiate Checkouts\) + Twitter Conversions + Snapchat Conversions
-
-![](https://downloads.intercomcdn.com/i/o/207471634/5edb365769ddc83260d29545/image.png)
-
-  
-  
-
-
-### **Create Fields**
-
-Once you’ve published a dataset you can also add any terms or metrics that might be measured uniquely by your organization. Some common examples of a Custom Fields include: a custom calculation for engagement rate that might be industry-specific, applying an internal formula that incorporates how your business determines profitability, or re-labeling existing fields in the vernacular that is most familiar to your team.
-
-#### To Create a Custom Term:
+#### To Create a Custom Field:
 
 1. Log in to your Panoramic account
-2. Navigate to your Company Settings by selecting the **COMPANIES** tab from your home screen
+2. Navigate to your Company Settings by selecting the **COMPANIES** tab from your home screen \(Admins only\)
 3. Under your Company Settings Menu, navigate to the **GLOSSARY** tab
 4. Select **CREATE TERM** on the far right of the Glossary screen
-5. Enter the **NAME** and **DESCRIPTION** of your Custom Term in the Create Term popup. The **Name** you provide will appear wherever your Term is used again \(e.g. in Custom Charts, Reports, etc.\)
-6. Select whether your Term is a **METRIC** or **DIMENSION**
-7. Select the **DATA TYPE**
-   * If you selected **DIMENSION,** the four **DATA TYPES** available are:
-     1. **Text** - is a text field, such as Region \(e.g. CALIFORNIA\)
-     2. **URL** - is a link, such as Website URL \(e.g. [https://panoramichq.com](https://panoramichq.com/)\)
-     3. **Boolean** - has a value that is either ‘TRUE’ or ‘FALSE’
-     4. **List** - includes several values, such as Age Buckets \(10-20, 21-30, 31-40, etc.\)
-   * If you selected **METRIC,** the four **DATA TYPES** are:
-     1. **Number** - is a number, such as Video Views
-     2. **Duration** - is an amount of time, such as Average Session Duration
-     3. **Percent** - is a percent, such as Bounce Rate
-     4. **Money** - is a value indicating currency, such as Spend or Average Order Value \(or AOV\)
-   * If you selected **METRIC,** the two **AGGREGATION TYPES** depend on whether the value can stand alone or is dependent on another value to be calculated.
-     1. **Summary** - is simply a summary, and does not depend on any other value.
-     2. **Ratio** - relies on other values, but does not need to be calculated within Panoramic. Examples of Ratio Metrics include Cost Per Click \(or CPC\) or Click Rate.
-8. Select **CREATE** to save your Custom Field and add it to any of your Boards.
+5. Enter the **NAME** and **DESCRIPTION** of your Custom Field in the Create Field popup. The **Name** you provide will appear wherever your Field is used again.
+6. Select whether your Field is a **METRIC** or **DIMENSION**
+7. Select the **DATA TYPE** \(Data type is dependent on whether you are creating a dimension or a metric\)
+   * **Text** - is a text field, such as Region \(e.g. CALIFORNIA\)
+   * **URL** - is a link, such as Website URL \(e.g. [https://panoramichq.com](https://panoramichq.com/)\)
+   * **Boolean** - has a value that is either ‘TRUE’ or ‘FALSE’
+   * **List** - includes several values, such as Age Buckets \(10-20, 21-30, 31-40, etc.\)
+   * **Number** - is a number, such as Video Views
+   * **Duration** - is an amount of time, such as Average Session Duration
+   * **Percent** - is a percent, such as Bounce Rate
+   * **Money** - is a value indicating currency, such as Spend or Average Order Value \(or AOV\)
+8. If you selected **METRIC** and you are creating a mapped field then you must choose an aggregation type. See [**Functions & Calculations**](functions-and-calculations.md) for a full list of Aggregations.
+9. Select **CREATE** to save your Custom Field and add it to any of your Boards.
 

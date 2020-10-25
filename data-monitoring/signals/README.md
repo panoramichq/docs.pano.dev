@@ -4,29 +4,7 @@ description: Coming Soon in Data Explorer!
 
 # Signals
 
-## What is a Signal?
-
-Signals are a section in Panoramic where users are able to create custom threshold settings for summary metrics. Users are able to create Signals in a Panoramic Workspace and be notified in their Feed.
-
-\*\*\*\*
-
-## **Signals Dashboard**
-
-In the Signals dashboard, users will be able to see all pre-existing Signals when available, and create a new Signal.
-
-The following functions will be available:
-
-* Search -- the ability to search for a Signal by name
-* Sort -- the ability to sort the signals by Recently Started, Ending Soon, Overpacing, and Underpacing
-* Active tab -- see all ongoing Signals
-* Completed tab -- see all Signals that are past the End Date
-
-All pre-existing Signals will be displayed with the following information:
-
-* Signal name
-* Date Range
-* Target metric
-* Status
+\[Available for the Enterprise Tier only\]
 
 ## **Creating a Signal**
 
@@ -48,11 +26,7 @@ For example: A user might want to pace your overall spend for a data source, and
 
 ![](https://downloads.intercomcdn.com/i/o/222914497/d94739671d30e4fba3defd76/image.png)
 
-Add all the Subscribers that should receive notifications, name and save your Signal!
-
-![](https://downloads.intercomcdn.com/i/o/222915802/30f134b8d3890d297263e705/image.png)
-
-## \*\*\*\*
+Add all the Subscribers that should receive notifications, name and save your Signal! Once a Signal has been created, you will be returned to the Signals dashboard, where the Signal is now displayed as a row in a table interface.
 
 ## **Anatomy of a Signal**
 
@@ -158,30 +132,4 @@ In the Signals UI, the user will be able to create a new Signal in a large modal
     </tr>
   </tbody>
 </table>
-
-Once a Signal has been created, the user will be returned to the Signals dashboard, where the Signal is now displayed as a row in a table interface.
-
-## **FAQ's \(to work into description\)**
-
-**Can I create a Signal for a date that is in the past?**
-
-You can create a Signal for a date that begins in the past, but it must have an end date that is in the future.
-
-Your date range must also be at least 24 hours.
-
-**Can I create a Signal for multiple data sources?**
-
-Just like in Data Tagging, you can create multiple Signals across data sources, but each individual signal is Data source specific.
-
-**What is level of granularity that I can track?**
-
-You can input the time in the highest granularity available to the data source selected. For example: Because hourly is available for Facebook Ads, Signals using Facebook Ads as the data source, will be able to input a specific hour of the day for the start/end date.
-
-**What happens if I make changes to my Workspace mid-flight?**
-
-If Workspace Filters are edited while Signals are scheduled in the future **OR** some Signals are mid-flight, when a Workspace, the new updates will not apply to the current Signals.
-
-**What if I want to track a rate metric?**
-
-We are working on adding rate metrics as the next iteration of Signals and will be releasing this soon!
 

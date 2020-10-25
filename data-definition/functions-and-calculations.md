@@ -1,44 +1,12 @@
 # Functions & Calculations
 
-## What are functions and how do they work in Panoramic?
-
-#### Deterministic results
-
-#### Case Sensitivity
-
-All field slugs, reserved words and functions are case sensitive and must be typed exactly as they are defined. 
-
-#### Example Syntax for Calculations
-
-Note: all examples shown below reference the underlying functions and slugs that are used in advanced modes in the UI including model files and chart config as well as directly with the API. Some UI elements in the platform simplify this syntax to make defining calculations easier, but all calculations resolve to the syntax below
-
-#### Taxonless querying 
-
-API only, if you would like direct access to the Husky API please reach out to your account manager
-
-`=m:(SUM(fb|spend) + SUM(tw|spend)) / COALESCE(SUM(ga|conversions), SUM(snap|conversions))`
-
-`=d:MERGE(fb|spend, tw|spend)`
-
-#### Custom Field Calculation
-
-`My_custom_field = (fb|spend + tw|spend) / COALESCE(ga|conversions, snap|conversions)`
-
-#### Data\_reference in Model Files
-
-`(db:“CoLuMn 1” + db:“Column 2!”) / db:Column_3`
-
-`COALESCE(db:views, db:impressions)`
-
 ## Row-Level Transformation Functions
 
-Transformation functions only affect a single row of data and do not require knowledge from multiple rows of data in order to calculate. Any functions added as transformation functions are fundamentally “safe” to the system and can be applied either in the model transformation layer or the field calculation layer. Since the application of transformation functions can create new dimensions or groupings of values, all transformation functions must be applied prior to the final aggregation step in husky.
+Transformation functions only affect a single row of data and do not require data from multiple rows in order to execute correctly. Any functions added as transformation functions are fundamentally “safe” to the system and can be applied either in the model transformation layer or the field calculation layer. Since the application of transformation functions can create new dimensions or groupings of values, all transformation functions are applied prior to aggregation in the Pano query service.
 
-Fields referenced in a transformation function can be namespaced or derived. If the function input requires a single field and the user wants to add multiple, then those fields must be MERGEd into a single field before being added to the transformation function.
+A Field must be created before it can be referenced in a calculation. Currently, calculations referencing other fields can only go six layers deep, meaning there cannot be more than five degrees of abstraction between the final Field and the original mapped fields it references.
 
 #### Text Functions
-
-![](https://downloads.intercomcdn.com/i/o/237098106/28a664dc173844fa1b98683c/Screen+Shot+2020-08-17+at+10.19.04+AM.png)
 
 <table>
   <thead>
@@ -93,7 +61,7 @@ Fields referenced in a transformation function can be namespaced or derived. If 
 
 #### Conditional Functions
 
-Conditional functions can be added into transformations in either the field “calculation” or the model “sql\_ref”. Note: Under this framework, the existing SUMIF\(\) function would need to be split into aggregation: SUM\(\) & calculation:IF\(\) and then applied at query time. This would also require a migration of any existing SUMIF\(\) formulas.
+Conditional functions can be added into transformations in either the field “calculation” or the model “sql\_ref”.
 
 <table>
   <thead>
@@ -156,31 +124,29 @@ Conditional functions can be added into transformations in either the field “c
 
 #### Logic Statement Operators
 
-![](https://downloads.intercomcdn.com/i/o/210111755/a63697fa6c21a084479f6281/Screenshot+2020-05-14+at+19.18.37.png)
-
-| Operator | Name | Description |
-| :--- | :--- | :--- |
-| IS NULL | IS NULL |  |
-| IS NOT NULL | IS NOT NULL |  |
-| && | AND |  |
-| \|\| | OR |  |
-| NOT | NOT |  |
-| = | EQUAL TO |  |
-| != | NOT EQUAL TO |  |
-| &lt;&gt; | NOT EQUAL TO |  |
-| &gt; | GREATER THAN |  |
-| &gt;= | GREATER THAN OR EQUAL |  |
-| &lt; | LESS THAN |  |
-| &lt;= | LESS THAN OR EQUAL |  |
+| Operator | Name |
+| :--- | :--- |
+| IS NULL | IS NULL |
+| IS NOT NULL | IS NOT NULL |
+| && | AND |
+| \|\| | OR |
+| NOT | NOT |
+| = | EQUAL TO |
+| != | NOT EQUAL TO |
+| &lt;&gt; | NOT EQUAL TO |
+| &gt; | GREATER THAN |
+| &gt;= | GREATER THAN OR EQUAL |
+| &lt; | LESS THAN |
+| &lt;= | LESS THAN OR EQUAL |
 
 #### Algebraic Functions
 
-| Function | Name | Description |
-| :--- | :--- | :--- |
-| + | ADDITION |  |
-| - | SUBTRACTION |  |
-| \* | MULTIPLICATION |  |
-| / | DIVISION |  |
+| Function | Name |
+| :--- | :--- |
+| + | ADDITION |
+| - | SUBTRACTION |
+| \* | MULTIPLICATION |
+| / | DIVISION |
 
 #### Casting Functions
 
@@ -268,7 +234,7 @@ Conditional functions can be added into transformations in either the field “c
         <p>Input value matching available, supported timezones to specify the time
           zone to convert to</p>
         </td>
-        <td style="text-align:left">Datetime field shifted to the desired timezone</td>
+        <td style="text-align:left">Date/time field shifted to the desired timezone</td>
     </tr>
     <tr>
       <td style="text-align:left">DATE_DIFF( {interval}, {start_time}, {end_time} )</td>
@@ -372,9 +338,9 @@ Conditional functions can be added into transformations in either the field “c
 
 **The following functions are only available in aggregation type and are not allowed in field calculations or model transformations**
 
-Aggregation functions are necessary for all metrics that are discovered in connected data tables. In order for husky to properly query and aggregate data, it needs to understand how to aggregate metrics. The ONLY fields that should have an aggregation defined are \*metric\* type fields that point directly to a \*database column\(s\)\*. For example, if I have a column in my database table for fb\|impressions and I set the aggregation on that field to be SUM\(\), I am telling Pano that any time I ask for fb\|impressions, no matter what dimensions I group by, I will get the SUM\(fb\|impression\) returned in the query results.
+Aggregation functions are necessary for all mapped metric fields. For example, if I have a column in my database table for "impressions" and I set the aggregation on that field to be SUM\(\), I am telling Pano that any time I ask for "impressions", no matter what dimensions I group by, I will get the SUM\(impressions\) returned in the query results.
 
-An aggregation type is applied only on the first dataset field pointing directly to the data, from there all references to the field inherit the same aggregation type.
+An aggregation type is applied only on the first mapped field pointing directly to the data table, all references to that field will inherit the same aggregation type.
 
 #### Standard Metrics
 
@@ -488,46 +454,29 @@ An aggregation type is applied only on the first dataset field pointing directly
 
 ## Special Functions
 
-Special functions are functions created by Pano that are not “common” in the industry. These functions have special actions that allow them to provide more value to users in an easier way. Special functions are not available in model level “sql\_ref” because they interact with multiple rows of data at once or they call external sources.
+Special functions are functions created by Pano that do not correlate to any standard SQL functions. These functions have special behaviors that provide useful functionality when querying your data. Special functions are not available in model level “sql\_ref”.
 
 #### Conditional
 
 * ? _Optional_
-  * Essentially the same as the NULLIF\(\) and ZEROIFNULL\(\) functions that we apply implicitly in the SQL query, this allows the users to define it explicitly now that we have migrated from global fields to namespaced fields
-  * This operator is available to add in front of any field in a transformation and signifies to the pano system that the following field is optional in the formula.
-    * A common use case is when you want to create some cross-dataset blended metric, but you want that metric to be available when looking at single metric models as well.
-      * E.g. CPC = \(fb\|spend + ?tw\|spend\) / \(fb\|clicks + ?tw\|clicks\)
-      * In this example CPC would be available if you are building a blended model with both fb and tw datasets, it would also be available if you are building an fb only model, since tw metrics are marked optional. Conversely, CPC would not be available if you build a tw only model since the formula requires fb
+  * Similar to the NULLIF\(\) and ZEROIFNULL\(\) functions in SQL. This operator is available to add in front of any field in a transformation and signifies to the pano system that the calculation should still execute successfully if the field is not available.
+  * A common use case is when you want to create some cross-dataset blended metric, but you want that metric to be available when looking at single-dataset Dataframes as well.
+    * E.g. CPC = \(facebook\|spend + ?twitter\|spend\) / \(facebook\|clicks + ?twitter\|clicks\)
+    * In this example CPC would be available if you are building a blended Dataframe with both facebook and twitter Datasets, it would also be available if you are building a facebook only Dataframe, since twitter metrics are marked optional. Conversely, CPC would not be available if you build a twitter only dataframe since the formula requires facebook
 
 #### Dimensions
 
-* MERGE\( {DIMENSION}, {DIMENSION}, ETC \) 🆇🆇
+* MERGE\( {DIMENSION}, {DIMENSION}, ETC \)
   * **Merge function allows for Dimension Blending** - the ability to "blend" different dimensions from multiple datasets.
   * Merge function can take multiple dimension fields as inputs
   * You can not include more than one dimension from each dataset
   * The dimensions included can point directly to data or they can be derived but they cannot already include merged dimensions
-* OVERRIDE\( {DIMENSION}, LOOKUP\_PATH, FILTER\_UNKNOWNS\) 🆇🆇
-  * Input:
+* OVERRIDE\( {DIMENSION}, LOOKUP\_PATH, FILTER\_UNKNOWNS\)
+  * This function allows you to clean your data by overriding existing values with new values that you would like to use. This is very common when labeling technical API enums with presentable names, or standardizing values across datasets so they can be blended reports
+  * Input
     * A single dimension field that they would like to use as input values for the override function
     * A path/link/reference to a predefined lookup dataset
     * FILTER\_UNKNOWNS - Boolean flag to strip unmatched values from the response or include the data grouped as “Unknown”
-
-#### Metrics
-
-* SYMMETRIC\_AGGREGATION
-  * Not visible function for users but we need to add support to husky queries to deduplicate metrics when they are fetched from two tables with different granularities \(compound keys\)
-* CUMULATIVE\( {METRIC}, {TIME\_DIMENSION} \)
-  * SQL: METRIC\_AGGREGATION\( {metric} \) OVER \(PARTITION BY \( {request\_dimensions\_minus\_time\_dimension} \) ORDER BY {time\_dimension} ASC\)
-  * Notes:
-    * Any time cumulative\(\) is called, especially when it references blended metrics or metrics with different aggregation types, the output of the window function should be calculated prior to combining the metrics.
-      * E.g. my\_cumulative\_cpm = CUMULATIVE\(‘CPM’\) where CPM == spend \*1000 / impressions where spend = SUM\(spend\) and impressions = SUM\(impressions\)
-      * \(SUM\(spend\) OVER \(PARTITION BY date ORDER BY date ASC\)\) \* 1000 / \(SUM\(impressions\) OVER \(PARTITION BY date ORDER BY date ASC\)\) AS my\_cumulative\_cpm
-* ROLLING\( {METRIC}, {TIME\_DIMENSION}, WINDOW\)
-  * SQL: METRIC\_AGGREGATION\( {metric} \) OVER \(PARTITION BY \( {request\_dimensions\_minus\_time\_dimension} \) ORDER BY {time\_dimension} ASC ROWS BETWEEN {WINDOW} PRECEDING AND CURRENT ROW\)
-* OVERALL\( {METRIC} \)
-  * Main use case: Share of Voice calculations like “impressions / OVERALL\(impressions\)”
-  * SQL: METRIC\_AGGREGATION\( {metric} \) OVER \(\)
-  * NOTE: COUNT\(\) and COUNT\_DISTINCT\(\) both convert to SUM\(\) after the first order aggregation
 
 
 

@@ -2,9 +2,9 @@
 
 ## What are Automated Insights?
 
-Automated Insights is a feature in the Panoramic platform that analyzes your data’s weekly performance, and posts the 10 most important insights as Collaboration messages. To do this, the system scans all the charts in your Workspace, and zooms into the metrics and dimensions inside the charts. Then, we analyze the entities’ performance based on a few key factors, as described below.
+Automated Insights is a feature in Pano that analyzes your data’s weekly performance, and posts the 10 most important insights as Collaboration messages. To do this, the system scans all the charts in your Workspace, and zooms into the metrics and dimensions inside the charts. Then, we analyze the entities’ performance based on a few key factors, as described below.
 
-The Automated Insights feature was researched and developed by the Panoramic team so you can get to meaningful takeaways about your data in a quicker fashion. With these insights, you can spend less time sifting through data, and more time in analysis and report delivery.
+The Automated Insights feature was researched and developed by the Pano team so you can get to meaningful takeaways about your data in a quicker fashion. With these insights, you can spend less time sifting through data, and more time in analysis and report delivery.
 
 There are two types of messages created by the Automated Insights feature:
 
@@ -29,7 +29,7 @@ Contrasts are insights that are based on performance metrics that have deviated 
 * Deviation: How much has the performance deviated from the Period over Period or Benchmark comparison?
 * Impact: How much Marketing Spend is attributed to the entity that is performing well or poorly?
 
-Most  Contrasts will be accompanied by a Root Cause Analysis that describes the entity’s performance in greater detail. In the example above, the Root Cause Analysis provides specific details for the Contrast, such as Country, Objective, and Region Cost Per View performance for the Video Target Publisher. 
+Most Contrasts will be accompanied by a Root Cause Analysis that describes the entity’s performance in greater detail. In the example above, the Root Cause Analysis provides specific details for the Contrast, such as Country, Objective, and Region Cost Per View performance for the Video Target Publisher. 
 
 However, some Contrasts might not have enough root causes. In these cases, we will still post the Contrasts with a prompt, asking: What do you think might have caused this?  
 

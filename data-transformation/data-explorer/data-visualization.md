@@ -1,12 +1,8 @@
 # Data Visualization
 
-## What is data visualization?
+## What is Data Visualization?
 
-Data visualization is a huge industry on its own. There are College courses, 1000's of research papers published and a large set of available resources to help present data so that it tells a story.
-
-At Panoramic we try to follow the approach taken by The Grammar of Graphics where the data is the starting point for a visualization and....
-
-Our goal with visualizations is to help you, the user and any other consumer of your transformation understand the data, we are not designing to be a presentation tool. This means we do not focus on the ability to customize colors and fonts in a chart. Instead we pick the colors for you based on research that shows which colors are the most easily interpretable by the consumer of a visual. If the data should not be presented in a line chart, then we disable the line chart. Our goal is to make it easier for new data visualizers to publish transformations that tell a story, and reduce the possibility of them making a mistake by presenting the data in a confusing manner.
+Data visualization is a huge industry on its own. There are College courses, 1000's of research papers published and a large set of available resources to help present data so that it tells a true story. At Panoramic we try to follow the approach taken by The Grammar of Graphics where the data is always the starting point for building the correct visualization.
 
 Here are some good resources to learn more about data visualization:
 
@@ -14,9 +10,9 @@ Here are some good resources to learn more about data visualization:
 * [https://www.datavisualizationsociety.com/](https://www.datavisualizationsociety.com/)
 * [https://observablehq.com/@d3/learn-d3](https://observablehq.com/@d3/learn-d3)
 
+## How Does Pano Approach Vizualizations
 
-
-## What’s our mantra?
+Our goal with visualizations is to help you and any other consumer of your transformation understand the data, we are not designing to be a presentation tool. This means we do not focus on the ability to customize colors and fonts in a chart. Instead we pick the colors for you based on research that shows which colors are the most easily interpretable. If the data should not be presented in a line chart, then we disable the line chart. Our goal is to make it easier for new data visualizers to publish transformations that tell a story, and reduce the possibility of them making a mistake by presenting the data in a confusing manner.
 
 Sounds great, but building software is making hundreds of small decisions constantly. It’s easy to get distracted, and what started as “simple” turns into “complicated” pretty quickly.
 
@@ -30,9 +26,7 @@ Let’s break each of those down.
 
 #### Above all else, communicate data accurately.
 
-Our platform is here to transform your marketing data. It should at least be accurate. Even if it means making charts less “visually appealing.”
-
-To be clear, we don’t like ugly charts! But take 3D charts as an example. They might look cool, but they’ve got a few problems:
+Our platform is here to transform your data. It should at least be accurate. Even if it means making charts less “visually appealing.” To be clear, we don’t like ugly charts! But take 3D charts as an example. They might look cool, but they’ve got a few problems:
 
 * Scientific research shows that humans have a hard time perceiving volume \*
 * 3D charts introduce a forced perspective that can make different shapes look the same depending on the viewing angle \*\*
@@ -45,9 +39,7 @@ If we really mean accuracy above all else, that means that 3D charts have got to
 
 #### Make the right thing easy and the wrong thing hard.
 
-Anyone who’s ever opened a spreadsheet knows that assembling data can get complicated quick. And it should be, building a great data visualization should have a lot of thought behind it.
-
-So instead of skipping the complexity, we take the “right” way of making charts, and make it feel like the carpool lane at rush hour. 
+Anyone who’s ever opened a spreadsheet knows that assembling data can get complicated quick. And it should be, building a great data visualization should have a lot of thought behind it. So instead of skipping the complexity, we take the “right” way of making charts, and make it feel like the carpool lane at rush hour. 
 
 “Right” can mean a lot of things, so we’re lucky to build upon the work of a lot of great thinkers ahead of us:
 
@@ -72,17 +64,7 @@ Wait a minute! The account only had APP\_INSTALLS and VIDEO\_VIEWS. If you were 
 
 Instead, we’ll warn you that you don’t have any campaigns with LINK\_CLICKS. You can still save the filter and carry on, but now we know you’re not walking away with a mistaken impression.
 
-## Using charts to express insights
-
-## Choosing the best chart type
-
-[https://coggle.it/diagram/Wyv1oFsxfvA1VCe4/t/what-chart-do-i-use/e18b54ede487b04ad15823adaf4f135007e84eeaec889f43ec03e9011235b024](https://coggle.it/diagram/Wyv1oFsxfvA1VCe4/t/what-chart-do-i-use/e18b54ede487b04ad15823adaf4f135007e84eeaec889f43ec03e9011235b024)
-
-## Using Panoramic Charts
-
-[![mceclip9.png](https://panoramic-e054c097e46a.intercom-attachments-1.com/i/o/195602710/dfbf30db4b089a8b47f8ede2/mceclip9.png)](https://panoramic-e054c097e46a.intercom-attachments-1.com/i/o/195602710/dfbf30db4b089a8b47f8ede2/mceclip9.png)
-
-## Colors in Charts
+## Colors in Visualizations
 
 Color is a really useful tool in our design toolkit. 
 
@@ -134,7 +116,7 @@ If a chart needs multiple colors, we sequence our colors so that any color will 
 
 #### Make the right thing easy and the wrong thing hard.
 
-Of course, these rules don’t mean much if they’re not consistently applied across all the charts that can exist on the Panoramic platform. So to make the right thing easy and the wrong thing hard, we include our color sequence for you. For example:
+Of course, these rules don’t mean much if they’re not consistently applied across all the charts that can exist on Pano. So to make the right thing easy and the wrong thing hard, we include our color sequence for you. For example:
 
 * If you create your own column chart to see the average CPM for your 5 objectives, you’ll see the same Blue 400, Orange 400, Green 400, Red 400, and Purple 400 sequence for high-contrast.
 * Color choices will be maintained inside the existing palette and at the same sequence to prevent accidental low-contrast designs that break accessible and inclusive designs.
@@ -160,7 +142,7 @@ But if data is not a full time job for you, you might be more concerned about sk
 
 #### The Right Chart for the Right Situation
 
-We at Panoramic believe in the power of charts, and we like trying new ones all the time. The problem is in our research, when visualization software present the user with too many options, the paradox of choice is real and 55% of the time a user compromises and builds a table.
+We at Pano believe in the power of charts, and we like trying new ones all the time. The problem is in our research, when visualization software presents the user with too many options, the paradox of choice is real and 55% of the time a user compromises and builds a table.
 
 With plenty of other options out there, we built a tool to encourage to express the full visual vocabulary of available charts.
 
@@ -215,6 +197,6 @@ Third, the order we draw your dimensions and metrics is based on progressive enh
 
 #### A Chart for Every Occasion
 
-With these rules in place, any marketer can feel empowered to make charts that use right visualization for any data. Try your first chart in a custom board today!  
+With these rules in place, any analyst can feel empowered to make charts that use right visualization for any data. Try your first chart in a custom board today!  
 
 

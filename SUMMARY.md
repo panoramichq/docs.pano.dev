@@ -11,7 +11,8 @@
   * [Teams](getting-started/setting-up-your-company/teams.md)
   * [Users](getting-started/setting-up-your-company/managing-users-and-teams.md)
 * [Your Profile](getting-started/your-profile.md)
-* [Workspaces](getting-started/creating-workspaces.md)
+* [Workspaces](getting-started/creating-workspaces/README.md)
+  * [Connecting Datasets](getting-started/creating-workspaces/connected-datasets.md)
 
 ## Data Preparation
 
@@ -35,18 +36,16 @@
 ## Data Transformation
 
 * [Overview](data-transformation/data-transformation-overview.md)
-* [Transformations \(Husky\)](data-transformation/untitled.md)
+* [Transformations](data-transformation/untitled.md)
 * [Data Filters](data-transformation/report-filters.md)
 * [Data Explorer](data-transformation/data-explorer/README.md)
   * [Data Visualization](data-transformation/data-explorer/data-visualization.md)
   * [Data Comparisons](data-transformation/data-explorer/data-comparisons.md)
   * [SmartSearch for Fields](data-transformation/data-explorer/dynamic-field-search.md)
-* [Transformation Templates](data-transformation/report-templates.md)
 
 ## Data Monitoring & Insights <a id="data-monitoring"></a>
 
 * [Overview](data-monitoring/overview/README.md)
-  * [Connected Datasets](data-monitoring/overview/connected-datasets.md)
   * [Activity Feed](data-monitoring/overview/activity-feed.md)
   * [Quick Search](data-monitoring/overview/quick-search.md)
 * [Boards](data-monitoring/untitled.md)
@@ -57,15 +56,13 @@
 ## Data Integration
 
 * [Overview](data-integration/overview.md)
-* [DataSync](data-integration/data-delivery-automation/README.md)
-  * [Tableau DataSync](data-integration/data-delivery-automation/tableau-datasync.md)
+* [Tableau DataSync](data-integration/tableau-datasync.md)
 
 ## Resources
 
-* [Common Use Cases](resources/common-use-cases/README.md)
-  * [Why Don't my Metrics Add Up?](resources/common-use-cases/why-dont-my-metrics-add-up.md)
-  * [Generating some common fields](resources/common-use-cases/generating-some-common-fields.md)
-  * [Metric Data Fan-out](resources/common-use-cases/metric-data-fan-out.md)
+* [Why Don't my Metrics Add Up?](resources/why-dont-my-metrics-add-up.md)
+* [Generating some common fields](resources/generating-some-common-fields.md)
+* [Metric Data Fan-out](resources/metric-data-fan-out.md)
 * [FAQ's](resources/faqs.md)
 * [Common Terms & Definitions](resources/common-terms-and-definitions.md)
 * [Data Security](resources/data-security.md)
