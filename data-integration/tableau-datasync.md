@@ -4,7 +4,7 @@
 
 #### Prerequisites
 
-To export data from Panoramic to your Tableau software, you will need:
+To export data from Pano to your Tableau software, you will need:
 
 * Tableau Software \(Tableau Online, Tableau Desktop or Tableau Public\)
 

@@ -35,16 +35,16 @@ _Note: Users are added at the Company level only, while Collaborators are added 
 
 \[Enterprise Tier Only\]
 
-Single Sign-on \(SSO\) is an added security benefit and convenience that is available to our enterprise tier clients. If you would like to connect the Panoramic platform to your existing identity provider, please reach out to your account rep.
+Single Sign-on \(SSO\) is an added security benefit and convenience that is available to our enterprise tier clients. If you would like to connect the Pano platform to your existing identity provider, please reach out to your account rep.
 
-### **Information that Panoramic will need from your IT team**:
+### **Information that Pano will need from your IT team**:
 
 * IdP Issuer URI
 * IdP Single Sign-On URL
 * IdP public certificate
-* A test account that Panoramic can use to test sign on and potentially troubleshoot issues
+* A test account that Pano can use to test sign on and potentially troubleshoot issues
 
-### **Information Panoramic will provide to the customer**
+### **Information Pano will provide to the customer**
 
 * The Audience URI value.
 * The Assertion Consumer Service URL

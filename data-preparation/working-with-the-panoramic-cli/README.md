@@ -2,7 +2,7 @@
 description: Getting started with the CLI
 ---
 
-# Panoramic CLI
+# Pano CLI
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ description: Getting started with the CLI
 
 ## Installing the CLI
 
-The Panoramic Command line interface \(CLI\) is available publicly on PyPI and can be installed by following the [Installation instructions](installation.md).
+The Pano Command line interface \(CLI\) is available publicly on PyPI and can be installed by following the [Installation instructions](installation.md).
 
 ## Setting up the CLI
 
@@ -20,7 +20,7 @@ To configure the CLI, run this:
 
 `pano configure`
 
-This command will prompt you for your API credentials. If you don't have them, [login to Panoramic and generate them](../../getting-started/your-profile.md#generating-an-api-token).
+This command will prompt you for your API credentials. If you don't have them, [login to Pano and generate them](../../getting-started/your-profile.md#generating-an-api-token).
 
 The configure command will create a directory called`.pano` in your home directory. All configuration information will be contained in that directory. If you ever need to reset the configuration of the CLI, simply remove the directory from your system.
 

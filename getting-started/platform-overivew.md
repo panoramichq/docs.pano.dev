@@ -1,6 +1,6 @@
 # Platform Overview
 
-## Getting Started with Panoramic
+## Getting Started with Pano
 
 Getting started is easy and you can be up and running in less than 30 minutes by just following these three steps.
 
@@ -9,13 +9,13 @@ Getting started is easy and you can be up and running in less than 30 minutes by
    1. Have something totally custom, dive in deep and configure your own custom models
 3. Invite teams into **Personalized Workspaces** and let them start safely customizing their metrics, setting up monitoring and letting the system push insights to them, freeing up more time to focus on the business
 
-## The anatomy of the Panoramic platform
+## The anatomy of the Pano platform
 
-When getting started using a new platform, it can often take time to “learn the ropes.” At Panoramic, we want to minimize that time so you get immediate value out of the platform. The below definitions explain how the platform is organized in an effort to help you quickly get up and running.
+When getting started using a new platform, it can often take time to “learn the ropes.” At Pano, we want to minimize that time so you get immediate value out of the platform. The below definitions explain how the platform is organized in an effort to help you quickly get up and running.
 
 **BOARD -** A Board can be thought of as your “visual organizer.” A Board can consist of one or more charts. There are two types of Boards: **Featured Boards** and **Custom Boards**.
 
-* **Featured Boards -** Part of the enterprise offering, Featured boards provide out-of-the-box report templates that appear soon after connecting your data to Panoramic. A Featured Board typically contains 5+ charts to provide you inspiration into how to analyze and visualize your marketing performance based on the data source you've connected \(i.e. Facebook Ads, Google Search, etc.\)
+* **Featured Boards -** Part of the enterprise offering, Featured boards provide out-of-the-box report templates that appear soon after connecting your data to Pano. A Featured Board typically contains 5+ charts to provide you inspiration into how to analyze and visualize your marketing performance based on the data source you've connected \(i.e. Facebook Ads, Google Search, etc.\)
 * **Custom Boards** - A Custom Board is a collection of charts that you, your team, or Pano’s Analytics Consultants have created which are tailored to your specific reporting needs
 
 **DATAFRAME -** Within each board lives one or more Dataframes. A Dataframe in Pano is considered any view or your underlying data, either in the same format as it exists in the data warehouse or transformed to match your reporting needs. These Dataframes can either be presented as tables or using any of the available chart types. As you assemble your transformed data, its common to think of boards similar to schemas in a database and Dataframes as the tables within the schema.
@@ -77,7 +77,7 @@ Just below the Workspaces tab within the Main Menu Navigation is Your Inbox. Inb
 
 ![](../.gitbook/assets/5%20%281%29.png)
 
-After creating a Company within Panoramic, you will see the **Company Settings Menu**, which displays the following tabs:
+After creating a Company within Pano, you will see the **Company Settings Menu**, which displays the following tabs:
 
 **COMPANY, SHARING, WORKSPACES, USERS, TEAMS, DATA CONNECTIONS, DATASETS, GLOSSARY.**
 

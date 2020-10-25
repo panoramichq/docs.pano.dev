@@ -1,6 +1,6 @@
 # SmartSearch for Fields
 
-Panoramic abstracts the Models so you don't have to worry about updating queries and dependencies. This approach makes it simpler for users who are not familiar with data, databases, or your underlying schema to still perform an analysis safely, without calculating something incorrectly, or having to take the time to learn what fields are in every table. Data engineers and analysts can focus on the underlying data model, to ensure everything is defined correctly, joined and exposed, and the business team can be free to explore the data in a safe and easy manner.
+Pano abstracts the Models so you don't have to worry about updating queries and dependencies. This approach makes it simpler for users who are not familiar with data, databases, or your underlying schema to still perform an analysis safely, without calculating something incorrectly, or having to take the time to learn what fields are in every table. Data engineers and analysts can focus on the underlying data model, to ensure everything is defined correctly, joined and exposed, and the business team can be free to explore the data in a safe and easy manner.
 
 Pano's Field Selector dynamically updates as you add each field to your Dataframe. Based on the underlying data model, Pano "knows" which relationships can be formed between multiple models, or dimensions and metrics. The field selector will automatically enable or disable available fields based on the set that you have already selected. 
 

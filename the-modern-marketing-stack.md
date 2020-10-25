@@ -29,7 +29,7 @@
 
 #### Data Transformation
 
-* Panoramic
+* Pano
 * DBT
 * Alteryx
 * Alooma
