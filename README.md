@@ -1,5 +1,5 @@
 ---
-description: Pano - A data transformation tool for the modern data stack
+description: Pano - A Data Transformation Tool for the Modern Data Stack
 ---
 
 # Introduction
