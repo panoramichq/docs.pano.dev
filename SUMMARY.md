@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [The Modern Data Stack](the-modern-marketing-stack.md)
-* [An Introduction to Data Analysis](how-does-data-work.md)
+* [An Introduction to Data Models](how-does-data-work.md)
 
 ## Getting Started
 
@@ -63,6 +63,4 @@
 * [Why Don't my Metrics Add Up?](resources/why-dont-my-metrics-add-up.md)
 * [Common Terms & Definitions](resources/common-terms-and-definitions.md)
 * [Data Security](resources/data-security.md)
-
-## Release Notes
 

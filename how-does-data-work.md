@@ -4,7 +4,7 @@
 
 Metric tables record measurements or metrics for a specific event. They generally consist of metric values and dimensions that relate to entity tables where additional descriptive attributes are stored. Metric tables are designed to a low level of granularity, meaning they can record metrics at a very atomic level. You may also hear these referred to as "Fact" tables.
 
-#### How metrics can be stored
+### How metrics can be stored
 
 * Lifetime Metric - this shows all the metrics that have been delivered or attributed to a specific entity over all time. So for example, top-level ad group impressions is the sum of all impressions served for the ad group in one table row.
 * Delta Metric - the total metric value is split across multiple rows in a column based on the set of dimensions in the table. For example, Impressions by ad group by date, each row in this table would contain only the impressions served on a given date for a given ad group.
@@ -27,3 +27,4 @@ In the modern data world, its very common to think of entities as the objects th
 These tables are common in API-driven data collection since the same piece of data may be collected multiple times by the system. Very often the system that talks to the API and collects the reporting metrics does not "know" whether a given report has already been collected. These systems will try to collect the same piece of data multiple times to ensure that they don't miss anything. Its usually best practice to collect the same piece of data multiple times because the source platform may restate the data and there may be "fresher" data if its collected again, this is commonly the case with conversions and long attribution windows, where the number of conversion events can continue to grow for up to 30 days after the user interaction.
 
 In some cases these duplicate records are "deduplicated" by the system that collects the data, but in some systems, or in some cases they are not. This will result in multiple rows in your database that reflect the same piece of data. If you aggregate this info without correctly handling these duplicates, you may find errors in your analysis. Pano helps with this analysis by deduplicating log data as well as providing multiple useful aggregation types to ensure you are reporting correctly.
+
