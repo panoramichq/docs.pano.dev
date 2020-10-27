@@ -1,22 +1,22 @@
 ---
-description: Pano - A Data Transformation Tool for the Modern Data Stack
+description: Panoramic - A Data Transformation Tool for the Modern Data Stack
 ---
 
 # Introduction
 
-## What is Pano?
+## What is Panoramic?
 
-Pano is an easy-to-use, low-code platform that allows you to quickly map and transform all of your company's data into meaningful insights so you can focus on what matters: growing your business.
+Panoramic is an easy-to-use, low-code platform that allows you to quickly map and transform all of your company's data into meaningful insights so you can focus on what matters: growing your business.
 
 Many transformation tools still rely on users creating complex "recipes" or "flows". These flows consist of a series of business rules that have to be chained together into complex dependency trees and executed in order. Legacy transformation tools provide the maximum amount of flexibility, but they are still designed around the basic premise of ETL, where data needs to be extracted, THEN transformed, THEN loaded somewhere. If you realize your final analysis is missing a metric, or one of your API sources updates to include a new metric, your data engineering team still needs to go update every single step in the flow to make sure that metric gets pulled in, transformed correctly, and passed all the way through to the final report.
 
-Pano is a data transformation tool for the modern data stack. It is built from the ground up to transform data using the ELT approach and to take advantage of the amazing capabilities that cloud data warehouses like Snowflake and BigQuery provide.  With Panoramic, you only need to keep a mapping of the data in your raw tables, no hand-written aggregations, no dependencies, have all your data available to you for querying the moment its mapped. No more managing complicated pipeline dependencies, Pano reverse engineers the optimal pipeline for you based on the final report you want to build.
+Panoramic is a data transformation tool for the modern data stack. It is built from the ground up to transform data using the ELT approach and to take advantage of the amazing capabilities that cloud data warehouses like Snowflake and BigQuery provide.  With Panoramic, you only need to keep a mapping of the data in your raw tables, no hand-written aggregations, no dependencies, have all your data available to you for querying the moment its mapped. No more managing complicated pipeline dependencies, Panoramic reverse engineers the optimal pipeline for you based on the final report you want to build.
 
 ## Why did we do it?
 
-Pano was built on a simple observation. Businesses need to become more data-driven, but the deck is stacked against them. With today’s tools, they need the help of a whole team of analysts, engineers, and data scientists just to create a single chart with data from 3 API accounts. Not great when you have 5 more API accounts waiting in the wings and a whole dashboard to build.
+Panoramic was built on a simple observation. Businesses need to become more data-driven, but the deck is stacked against them. With today’s tools, they need the help of a whole team of analysts, engineers, and data scientists just to create a single chart with data from 3 API accounts. Not great when you have 5 more API accounts waiting in the wings and a whole dashboard to build.
 
-At Pano, we asked what if we could do it better? 
+At Panoramic, we asked what if we could do it better? 
 
 What if we could offer a single platform to do all of that, with no coding required?
 
@@ -26,18 +26,18 @@ A platform where …
 * SQL is available, but not required
 * No complex engineering is required
 
-## Who is Pano built for?
+## Who is Panoramic built for?
 
 ### Data Experts
 
-Clear your backlog of basic data cleaning and reporting tasks so you can focus on what you’re good at, building models, forecasts and building products that grow your business
+Clear your backlog of basic data cleaning and reporting tasks so you can focus on what you’re good at, building models, forecasts and building products that grow your business.
 
 * The tools to push relevant metrics to the teams who understand them best
 * Surface data quality issues in a way that's easy to fix them
 
 ### Excel / BI Masters
 
-Just like what you’re used to, but now you can define your logic once and use it forever, or until you want to change it. Imagine if all your data could flow into your perfect excel template instead of having to rebuild it each week...that’s Pano
+Just like what you’re used to, but now you can define your logic once and use it forever, or until you want to change it. Imagine if all your data could flow into your perfect excel template instead of having to rebuild it each week...that’s Pano.
 
 * Cut time to prepare actionable data
 * Avoid IT bottlenecks and reliance on data scientists
