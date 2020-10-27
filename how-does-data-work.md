@@ -1,8 +1,8 @@
-# An Introduction to Data Analysis
+# An Introduction to Data Models
 
 ## What are Metric Tables?
 
-Metric tables record measurements or metrics for a specific event. They generally consist of metric values and dimensions that relate to entity tables where additional descriptive attributes are stored. Metric tables are designed to a low level of granularity, meaning they can record metrics at a very atomic level. You may also hear these referred to as "Fact" tables. 
+Metric tables record measurements or metrics for a specific event. They generally consist of metric values and dimensions that relate to entity tables where additional descriptive attributes are stored. Metric tables are designed to a low level of granularity, meaning they can record metrics at a very atomic level. You may also hear these referred to as "Fact" tables.
 
 #### How metrics can be stored
 
@@ -12,9 +12,9 @@ Metric tables record measurements or metrics for a specific event. They generall
 
 Since metrics accrue over time, there are many possibilities to break metrics down by various reporting dimensions, the most common dimension is time. Panoramic uses time breakdowns heavily in being able to fetch and replay metrics.
 
-Common time breakdowns are hourly, daily, or monthly. Panoramic reads data at the most granular time breakdown provided by each platform, this allows the system to have more flexibility when aggregating metrics for a specific analysis.
+Common time breakdowns are hourly, daily, weekly, or monthly. Panoramic reads data at the most granular time breakdown provided by each platform, this allows the system to have more flexibility when aggregating metrics for a specific analysis.
 
-Other breakdowns that are commonly provided by platforms include geographic, demographic and psychographic attributes. All of these breakdowns can be added to the data glossary within Pano. This allows our users to easily aggregate breakdown metrics across multiple datasets, allowing for easy answers to questions like “how much have we spent toward men in the past week?” or “how does my ROI in NY compare to LA?”
+Other breakdowns that are commonly provided by platforms include geographic, demographic, and psychographic attributes. All of these breakdowns can be added to the Data Glossary within Pano. This allows our users to easily aggregate breakdown metrics across multiple datasets, allowing for easy answers to questions like, “How much have we spent toward men in the past week?” or, “How does my ROI in NY compare to LA?”
 
 ## What are Entity tables?
 
@@ -27,4 +27,3 @@ In the modern data world, its very common to think of entities as the objects th
 These tables are common in API-driven data collection since the same piece of data may be collected multiple times by the system. Very often the system that talks to the API and collects the reporting metrics does not "know" whether a given report has already been collected. These systems will try to collect the same piece of data multiple times to ensure that they don't miss anything. Its usually best practice to collect the same piece of data multiple times because the source platform may restate the data and there may be "fresher" data if its collected again, this is commonly the case with conversions and long attribution windows, where the number of conversion events can continue to grow for up to 30 days after the user interaction.
 
 In some cases these duplicate records are "deduplicated" by the system that collects the data, but in some systems, or in some cases they are not. This will result in multiple rows in your database that reflect the same piece of data. If you aggregate this info without correctly handling these duplicates, you may find errors in your analysis. Pano helps with this analysis by deduplicating log data as well as providing multiple useful aggregation types to ensure you are reporting correctly.
-
