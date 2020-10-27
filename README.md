@@ -37,7 +37,7 @@ Clear your backlog of basic data cleaning and reporting tasks so you can focus o
 
 ### Excel / BI Masters
 
-Just like what you’re used to, but now you can define your logic once and use it forever, or until you want to change it. Imagine if all your data could flow into your perfect excel template instead of having to rebuild it each week...that’s Pano.
+Just like what you’re used to, but now you can define your logic once and use it forever, or until you want to change it. Imagine if all your data could flow into your perfect excel template instead of having to rebuild it each week...that’s Panoramic.
 
 * Cut time to prepare actionable data
 * Avoid IT bottlenecks and reliance on data scientists
@@ -58,22 +58,22 @@ Don’t care about the magic sauce going on under the hood. Great, then don't, j
 
 #### Pano makes your insights as agile as you are
 
-Get the most out of every team by empowering them with the data they need. Legacy systems are built on complex ETL pipelines that require data engineers to write custom transformation queries to expose the data you need. With Pano you can connect all your data warehouses and Pano’s **Data Preparation** and **Data Definition** tools allow you to query and blend data across all of them. Pano continuously optimizes query performance and aggregation pipelines under the hood so your engineering team doesn’t need to write any more custom ETL pipelines.
+Get the most out of every team by empowering them with the data they need. Legacy systems are built on complex ETL pipelines that require data engineers to write custom transformation queries to expose the data you need. With Panoramic you can connect all your data warehouses and Panoramic’s **Data Preparation** and **Data Definition** tools allow you to query and blend data across all of them. Panoramic continuously optimizes query performance and aggregation pipelines under the hood so your engineering team doesn’t need to write any more custom ETL pipelines.
 
-These pipelines start off small and simple but grow over time to become behemoths that can slow down an organization’s agility. The static data copying nature of these pipelines makes it extremely difficult and costly to update once its set up. With Pano, you don’t have to wait weeks for costly pipeline updates to expose a needed metric, its as simple as updating the mapping in the UI and publishing your changes.
+These pipelines start off small and simple but grow over time to become behemoths that can slow down an organization’s agility. The static data copying nature of these pipelines makes it extremely difficult and costly to update once its set up. With Panoramic, you don’t have to wait weeks for costly pipeline updates to expose a needed metric, its as simple as updating the mapping in the UI and publishing your changes.
 
 #### Single source of truth to track your company goals
 
-Pano’s Unified **Data** **Transformation** Layer allows everyone in the company to get the answers they need, easily, in one place and in one common language. Don’t worry whether it's called a segment, an audience, a list, they all get mapped to the name your team is familiar with. Pano lets you easily blend internal sales and customer metrics with third party marketing metrics to monitor real business outcomes. Marketing spend, customer acquisition cost, lifetime value, return on ad spend, you name it!
+Panoramic’s Unified **Data** **Transformation** Layer allows everyone in the company to get the answers they need, easily, in one place and in one common language. Don’t worry whether it's called a segment, an audience, a list, they all get mapped to the name your team is familiar with. Panoramic lets you easily blend internal sales and customer metrics with third party marketing metrics to monitor real business outcomes. Marketing spend, customer acquisition cost, lifetime value, return on ad spend, you name it!
 
-Give your teams the context to optimize toward the right goals, the ones that will grow the business
+Give your teams the context to optimize toward the right goals, the ones that will grow the business.
 
 #### Effortlessly stay on top of Performance
 
-**Data Monitoring & Insights** lets you set goals, alerts and benchmarks. Pano will monitor all your data and notify you when you’ve reached your goal or suggest optimizations for poor performance.  Easily customize Workspaces to focus only on the data you need, and collaborate with the team who needs the data.
+**Data Monitoring & Insights** lets you set goals, alerts and benchmarks. Panoramic will monitor all your data and notify you when you’ve reached your goal or suggest optimizations for poor performance.  Easily customize Workspaces to focus only on the data you need, and collaborate with the team who needs the data.
 
 #### Integrate into your existing workflows
 
-* This isn’t your first rodeo, you already have a Tableau dashboard that you’re used to looking at. Don’t worry, with Pano we can fit into your team’s existing workflows, whether its pushing data out to excel for offline presentations or syncing with tableau to visualize cross-platform blended data
-* Pano’s growing list of **Data Integration** partners allows you to get the data you need, wherever you need it
+* This isn’t your first rodeo, you already have a Tableau dashboard that you’re used to looking at. Don’t worry, with Panoramic we can fit into your team’s existing workflows, whether its pushing data out to excel for offline presentations or syncing with Tableau to visualize cross-platform blended data
+* Panoramic’s growing list of **Data Integration** partners allows you to get the data you need, wherever you need it
 
