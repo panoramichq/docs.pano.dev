@@ -18,7 +18,7 @@ This enables you to give Pano only the access required to help you understand & 
 
 ## SQL Helpers to create users & grant permissions
 
-Pano recommends creating a dedicated user for the Pano platform. This makes it easier for your engineering team to manage access controls and monitor usage & performance. 
+Pano recommends creating a dedicated user for the Pano platform. This makes it easier for your engineering team to manage access controls and monitor usage & performance.
 
 ### MySQL
 
@@ -57,9 +57,9 @@ In order to prepare a Snowflake connection, Pano needs the following rights in y
 * USER and ROLE with appropriate access
 * SELECT access to any tables or views you wants to read
 * USAGE access on any schemas or databases you want to read
-* ALL access on the write schema (by default we call it “PANORAMIC”)
+* ALL access on the write schema \(by default we call it “PANORAMIC”\)
 * USAGE, OPERATE, MONITOR on a warehouse
-* IP whitelist (if configured)
+* IP whitelist \(if configured\)
 
 The following SQL can be used to accomplish everything above.
 

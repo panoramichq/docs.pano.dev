@@ -74,6 +74,5 @@ Give your teams the context to optimize toward the right goals, the ones that wi
 
 #### Integrate into your existing workflows
 
-* This isn’t your first rodeo, you already have a Tableau dashboard that you’re used to looking at. Don’t worry, with Pano we can fit into your team’s existing workflows, whether its pushing data out to excel for offline presentations or syncing with tableau to visualize cross-platform blended data
-* Pano’s growing list of **Data Integration** partners allows you to get the data you need, wherever you need it
+This isn’t your first rodeo, you already have a Tableau dashboard that you’re used to looking at. Don’t worry, with Pano we can fit into your team’s existing workflows, whether its pushing data out to excel for offline presentations or syncing with tableau to visualize cross-platform blended data. Pano’s growing list of **Data Integration** partners allows you to get the data you need, wherever you need it
 
