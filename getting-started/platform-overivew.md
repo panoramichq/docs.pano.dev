@@ -29,7 +29,7 @@ When getting started using a new platform, it can often take time to “learn th
 
 ## **Overall Navigation**
 
-![](../.gitbook/assets/2%20%281%29.png)
+![](overall-nav.png)
 
 ### **Main Menu Navigation**
 
@@ -42,7 +42,7 @@ If you are an **Admin**, you will see the Main Menu, which displays three primar
 
 ### **Workspace Menu Navigation**
 
-![](../.gitbook/assets/3.png)
+![](workspace-nav.png)
 
 After creating and selecting a Workspace, you will see the Workspace Menu, which displays five primary tabs:
 
@@ -56,7 +56,7 @@ After creating and selecting a Workspace, you will see the Workspace Menu, which
 
 ### **Inbox Main Navigation**
 
-![](../.gitbook/assets/4%20%281%29.png)
+![](inbox-nav.png)
 
 Just below the Workspaces tab within the Main Menu Navigation is Your Inbox. Inbox allows you to work across multiple Workspaces, combining private, public and team-specific messages in one place. After selecting Inbox, you will see the following options on the left menu:
 
@@ -75,7 +75,7 @@ Just below the Workspaces tab within the Main Menu Navigation is Your Inbox. Inb
 
 ### **Company Main Navigation**
 
-![](../.gitbook/assets/5%20%281%29.png)
+![](company-nav.png)
 
 After creating a Company within Pano, you will see the **Company Settings Menu**, which displays the following tabs:
 
