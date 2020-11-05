@@ -2,7 +2,7 @@
 
 ## A Modern Data Stack:
 
-* Streamlines the process, enabling you to consolidate multiple, typically disparate data sources into one cohesive analysis
+* Streamlines the process, enabling you to consolidate multiple, typically disparate, data sources into one cohesive analysis
 * Saves time, avoiding the painful process of going back and forth between tabs, emails, and accounts
 * Simplifies the data collection and aggregation process, often a cumbersome task tackled by an entire team
 * Saves money, self-serve tools that easily connect speed the process vs building in-house solutions
