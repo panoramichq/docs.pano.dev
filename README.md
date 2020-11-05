@@ -10,7 +10,7 @@ Pano is an easy-to-use, low-code platform that allows you to quickly map and tra
 
 Many transformation tools still rely on users creating complex "recipes" or "flows". These flows consist of a series of business rules that have to be chained together into complex dependency trees and executed in order. Legacy transformation tools provide the maximum amount of flexibility, but they are still designed around the basic premise of ETL, where data needs to be extracted, THEN transformed, THEN loaded somewhere. If you realize your final analysis is missing a metric, or one of your API sources updates to include a new metric, your data engineering team still needs to go update every single step in the flow to make sure that metric gets pulled in, transformed correctly, and passed all the way through to the final report.
 
-Pano is a data transformation tool for the modern data stack. It is built from the ground up to transform data using the ELT approach and to take advantage of the amazing capabilities that cloud data warehouses like Snowflake and BigQuery provide.  With Panoramic, you only need to keep a mapping of the data in your raw tables, no hand-written aggregations, no dependencies, have all your data available to you for querying the moment its mapped. No more managing complicated pipeline dependencies, Pano reverse engineers the optimal pipeline for you based on the final report you want to build.
+Pano is a data transformation tool for the modern data stack. It is built from the ground up to transform data using the ELT approach and to take advantage of the amazing capabilities that cloud data warehouses like Snowflake and BigQuery provide.  With Panoramic, you only need to keep a mapping of the data in your raw tables, no hand-written aggregations, no dependencies, have all your data available to you for querying the moment it is mapped. No more managing complicated pipeline dependencies, Pano reverse engineers the optimal pipeline for you based on the final report you want to build.
 
 ## Why did we do it?
 
@@ -60,7 +60,7 @@ Don’t care about the magic sauce going on under the hood. Great, then don't, j
 
 Get the most out of every team by empowering them with the data they need. Legacy systems are built on complex ETL pipelines that require data engineers to write custom transformation queries to expose the data you need. With Pano you can connect all your data warehouses and Pano’s **Data Preparation** and **Data Definition** tools allow you to query and blend data across all of them. Pano continuously optimizes query performance and aggregation pipelines under the hood so your engineering team doesn’t need to write any more custom ETL pipelines.
 
-These pipelines start off small and simple but grow over time to become behemoths that can slow down an organization’s agility. The static data copying nature of these pipelines makes it extremely difficult and costly to update once its set up. With Pano, you don’t have to wait weeks for costly pipeline updates to expose a needed metric, its as simple as updating the mapping in the UI and publishing your changes.
+These pipelines start off small and simple but grow over time to become behemoths that can slow down an organization’s agility. The static data copying nature of these pipelines makes it extremely difficult and costly to update once it is set up. With Pano, you don’t have to wait weeks for costly pipeline updates to expose a needed metric, it is as simple as updating the mapping in the UI and publishing your changes.
 
 #### Single source of truth to track your company goals
 
@@ -74,5 +74,5 @@ Give your teams the context to optimize toward the right goals, the ones that wi
 
 #### Integrate into your existing workflows
 
-This isn’t your first rodeo, you already have a Tableau dashboard that you’re used to looking at. Don’t worry, with Pano we can fit into your team’s existing workflows, whether its pushing data out to excel for offline presentations or syncing with tableau to visualize cross-platform blended data. Pano’s growing list of **Data Integration** partners allows you to get the data you need, wherever you need it
+This isn’t your first rodeo, you already have a Tableau dashboard that you’re used to looking at. Don’t worry, with Pano we can fit into your team’s existing workflows, whether it is pushing data out to excel for offline presentations or syncing with tableau to visualize cross-platform blended data. Pano’s growing list of **Data Integration** partners allows you to get the data you need, wherever you need it
 
