@@ -14,5 +14,5 @@ To Create a Team:
 
 ![](../../.gitbook/assets/screen-shot-2020-09-18-at-2.04.22-pm.png)
 
-_Note: If you don’t yet know which teams you want to create, you can always create a default “General” team name and go back to this place and edit them anytime in your Company Settings._
+_Note: Teams can be edited anytime in Company Settings. If you don’t yet know which teams you want to create, you can initially create a default “General” team and edit later._
 
