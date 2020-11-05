@@ -22,12 +22,12 @@ _Note: Users are added at the Company level only, while Collaborators are added 
 
 | **Functions** | Admin | Edit | View |
 | :--- | :--- | :--- | :--- |
-| Add new Users to Company | ✔️ | - | - |
-| Share Company access | ✔️ | - | - |
+| Add New Users to Company | ✔️ | - | - |
+| Share Company Access | ✔️ | - | - |
 | Manage Workspace Settings | ✔️ | ✔️ | - |
 | Create Terms in Company Glossary | ✔️ | ✔️ | - |
 | Add and Remove Data Sources | ✔️ | ✔️ | - |
-| Create/Edit Boards and Charts, including Drafts | ✔️ | ✔️ | - |
+| Create/Edit Boards and Charts, Including Drafts | ✔️ | ✔️ | - |
 | View and Comment in Collaboration | ✔️ | ✔️ | ✔️ |
 | View Published Boards and Charts | ✔️ | ✔️ | ✔️ |
 
@@ -46,7 +46,7 @@ Single Sign-on \(SSO\) is an added security benefit and convenience that is avai
 
 ### **Information Pano will provide to the customer**
 
-* The Audience URI value.
+* The Audience URI value
 * The Assertion Consumer Service URL
 * SAML metadata file
 
