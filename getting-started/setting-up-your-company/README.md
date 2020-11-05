@@ -8,7 +8,7 @@ Company Settings contain the main setup information for admins and analysts to m
 
 Sharing allows you to invite users from other companies into your company. This is very useful when you work with an external consulting company who you would like to share access with for a limited period of time, or if you have an organizational relationship with another company and have agreed to share reporting, or an agency who could better report and optimize if they are given access to live, dynamic reporting metrics.
 
-You can always view the companies that you have shared access with in your company settings, and revoke access at any time. 
+You can always view the companies that you have shared access within your company settings, and revoke access at any time. 
 
 Keep in mind, administrators of shared companies will have access to your Workspaces and Company Settings to help manage your organization. Edit and View users from the shared company will only have access to Workspaces and must be explicitly invited into each Workspace.
 
@@ -30,7 +30,7 @@ Data Connections store the credentials to all of your physical data sources, the
 
 ## Datasets
 
-Datasets allow you to define virtual "groupings" of similar data, independent of where that data is stored. If you have CRM data in 3 schemas across 2 data connections... Combine it all into a single dataset so that you can define the joins between related dimensions and analyze it as if it was all stored in one nice and clean schema.
+Datasets allow you to define virtual "groupings" of similar data, independent of where that data is stored. If you have CRM data in 3 schemas across 2 data connections, combine it all into a single dataset so that you can define the joins between related dimensions and analyze it as if it was all stored in one nice and clean schema.
 
 ## Glossary
 
