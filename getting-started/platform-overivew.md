@@ -4,10 +4,10 @@
 
 Getting started is easy and you can be up and running in less than 30 minutes by just following these three steps.
 
-1. Connect your data and **define all your datasets** - already have the data, connect your data warehouse. Need help getting the data, Integrate with one of our Data Pipeline partners. Once you're connected, Data Preparation and Data Definition has never been easier to manage.
-2. Let our unified **data transformation layer** inspect all of the data you connect and build useful models to speed up your analysis
+1. Connect your data and **define all your datasets** - already have the data, connect your data warehouse. Need help getting the data, integrate with one of our data pipeline partners. Once you're connected, Data Preparation and Data Definition has never been easier to manage.
+2. Let our unified **data transformation layer** inspect all of the data you connect and build useful models to speed up your analysis.
    1. Have something totally custom, dive in deep and configure your own custom models
-3. Invite teams into **Personalized Workspaces** and let them start safely customizing their metrics, setting up monitoring and letting the system push insights to them, freeing up more time to focus on the business
+3. Invite teams into **Personalized Workspaces** and let them start safely customizing their metrics, setting up monitoring and letting the system push insights to them, freeing up more time to focus on the business.
 
 ## The Anatomy of the Pano Platform
 
