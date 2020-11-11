@@ -4,7 +4,7 @@
 
 Workspaces are secure areas for teams to collaborate around their data. Within one Company, there can be multiple Workspaces. It is hard to analyze in a silo, give teams a unified view of the business so they can make better contextual decisions.
 
-Workspaces allows you to group together relevant boards, dataframes and conversations, while allowing you to customize permissions \(e.g. giving access to one agency for certain campaigns, or sectioning off access per teams for different product lines\).
+Workspaces allow you to group together relevant boards, dataframes and conversations, while allowing you to customize permissions \(e.g. giving access to one agency for certain campaigns, or sectioning off access per teams for different product lines\).
 
 Workspaces are commonly used to separate your data by:
 
