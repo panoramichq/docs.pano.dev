@@ -62,9 +62,26 @@ In order to assign the model to the dataset, just copy it from the scanned folde
 
 `cp scanned/db.stg.adwords_metrics.entity_accounts.model.yaml a_cool_dataset`
 
+## Fields
+
+To be able to query your model in Panoramic, you need to have .field.yaml definitions set up. This design allows reusing business logic across your datasets.
+
+To set up fields according to the models in your dataset, run `pano field scaffold`. The command will set up field definitions in the `fields` folder inside your dataset folder.
+
+You can run the `pano field scaffold` command every time you add new models to your datasets or reference new fields in your model files.
+
+If you want to clean up fields that have no data references in your model files, run `pano field cleanup`.
+
+## Validation & Push
+
 In order to push the changes to the platform, just do
 
 `pano push`
+
+
+Validation happens automatically on most steps, but you can always run `pano validate` to check your setup.
+
+
 
 Congratulations, now you're ready to start transforming your data in the Platform!
 
